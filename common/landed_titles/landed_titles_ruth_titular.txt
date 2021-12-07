@@ -1,0 +1,233 @@
+#East Slavic Tribes
+d_ulichi = { 
+	color = { 225 204 147 }
+	color2 = { 255 255 255 }
+	
+	culture = ulich
+	tribe = yes
+	
+	allow = {
+		always = no
+	}
+	
+	title = "HIGH_CHIEF"
+	foa = "HIGH_CHIEF_FOA"
+	title_prefix = "TRIBE_OF"
+}
+
+d_polianians = { 
+	color = { 106 66 26 }
+	
+	culture = polianian
+	tribe = yes
+	
+	allow = {
+		always = no
+	}
+	
+	title = "HIGH_CHIEF"
+	foa = "HIGH_CHIEF_FOA"
+	title_prefix = "TRIBE_OF"
+}
+
+d_slovenians = { 
+	color = { 154 170 110 }
+	
+	culture = slovenian
+	tribe = yes
+	
+	allow = {
+		always = no
+	}
+	
+	title = "HIGH_CHIEF"
+	foa = "HIGH_CHIEF_FOA"
+	title_prefix = "TRIBE_OF"
+}
+
+d_volhyniani = { 
+	color = { 255 255 223 }
+	
+	culture = volhynian
+	tribe = yes
+	
+	allow = {
+		always = no
+	}
+	
+	title = "HIGH_CHIEF"
+	foa = "HIGH_CHIEF_FOA"
+	title_prefix = "TRIBE_OF"
+}
+
+d_kryvians = { # aka Krivichi
+	color = { 128 133 104 }
+	
+	culture = krivich
+	tribe = yes
+	
+	allow = {
+		always = no
+	}
+	
+	title = "HIGH_CHIEF"
+	foa = "HIGH_CHIEF_FOA"
+	title_prefix = "TRIBE_OF"
+}
+
+d_severians = { # aka Severiane
+	color = { 120 155 40 }
+	
+	culture = severian
+	tribe = yes
+	
+	allow = {
+		always = no
+	}
+	
+	title = "HIGH_CHIEF"
+	foa = "HIGH_CHIEF_FOA"
+	title_prefix = "TRIBE_OF"
+}
+
+d_vyatichi = { 
+	color={ 169 183 125 }
+	
+	culture = vyatich
+	tribe = yes
+	
+	allow = {
+		always = no
+	}
+	
+	title = "HIGH_CHIEF"
+	foa = "HIGH_CHIEF_FOA"
+	title_prefix = "TRIBE_OF"
+}
+
+d_dregovichi = { 
+	color={ 100 100 20 }
+	
+	culture = dregovich
+	tribe = yes
+	
+	allow = {
+		always = no
+	}
+	
+	title = "HIGH_CHIEF"
+	foa = "HIGH_CHIEF_FOA"
+	title_prefix = "TRIBE_OF"
+}
+
+d_radimichi = { 
+	color={ 110 136 68 }
+	
+	culture = radimich
+	tribe = yes
+	
+	allow = {
+		always = no
+	}
+	
+	title = "HIGH_CHIEF"
+	foa = "HIGH_CHIEF_FOA"
+	title_prefix = "TRIBE_OF"
+}
+
+k_galicia_volhynia = {
+	color = { 248 244 0 }
+	
+	capital = 536 # Galich
+	
+	culture = ruthenian
+	
+	allow = {
+		custom_tooltip = {
+			text = controls_galich_volhynia
+			hidden_tooltip = {
+				d_galich = {
+					owner = { character = ROOT }
+				}
+				d_volhynia = {
+					owner = { character = ROOT }
+				}
+				OR = {
+					ai = no
+					culture_group = west_slavic
+					culture_group = east_slavic
+				}
+			}
+		}
+	}
+}
+
+k_crimea = {
+	color = { 227 115 80 }
+	
+	capital = 559 # Crimea
+	
+	allow = {
+		custom_tooltip = {
+			text = controls_crimea
+			hidden_tooltip = {
+				d_crimea = {
+					owner = { 
+						OR = {
+							is_liege_or_above = ROOT
+							character = ROOT
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+k_carpathian_rus = {
+	color = { 200 200 200 }
+	
+	capital = 539 # Marmaros
+	
+	culture = rusyn
+		
+	allow = {
+		k_carpathian_rus = {
+			is_titular = no
+		}
+	}
+}
+
+e_commonwealth = {
+	color = { 253 1 0 }
+	
+	capital = 529 # Plock
+	
+	culture = polish
+	
+	lithuanian = "Abieju Tautu Respublika"
+	polish = Rzeczpospolita
+	
+	allow = {
+		custom_tooltip = {
+			text = controls_poland_lithuania
+			hidden_tooltip = {
+				k_poland = {
+					character = {
+						owner = ROOT
+					}
+				}
+				k_lithuania = {
+					character = {
+						owner = ROOT
+					}
+				}
+				OR = {
+					ai = no
+					culture_group = west_slavic
+					culture_group = baltic
+				}
+			}
+		}
+	}
+}

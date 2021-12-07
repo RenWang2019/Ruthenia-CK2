@@ -1,0 +1,1074 @@
+#Ruthenia Mod
+#Ruthenian culture conversion
+#Reserved 1000-1099
+
+namespace = RUTH
+
+#Clear flags
+character_event = {
+	id = RUTH.1000
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		remove_character_modifier = holding_kupala
+		clr_character_flag = do_not_disturb
+		set_character_flag = recent_kupala
+	}
+}
+
+#Kupala Night start event
+character_event = {
+	id = RUTH.1001
+	desc = EVTDESC_RUTH_1001
+	picture = GFX_evt_slavic_bonfire
+	border = GFX_event_normal_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_RUTH_1001
+		hidden_tooltip = {
+			if = {
+				limit = {
+					is_married = yes
+					spouse = {
+						prisoner = no
+						age = 12
+						NOT = {
+							trait = incapable
+						}
+					}
+				}
+				random_list = {
+					50 = {
+						character_event = {
+							id = RUTH.1003
+							days = 4
+						}
+					}
+					50 = {
+						spouse = {
+							character_event = {
+								id = RUTH.1004
+								days = 2
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_married = no
+				}
+				character_event = {
+					id = RUTH.1003
+					days = 4
+				}
+			}
+		}
+	}
+}
+
+#Kupala Night end
+character_event = {
+	id = RUTH.1002
+	desc = EVTDESC_RUTH_1002
+	picture = GFX_evt_slavic_bonfire
+	border = GFX_event_normal_frame_diplomacy
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = EVTOPTA_RUTH_1002
+		prestige = 50
+		piety = 50
+		hidden_tooltip = {
+			add_character_modifier = {
+				name = held_kupala
+				duration = 365
+			}
+			character_event = {
+				id = RUTH.1000
+			}
+		}
+	}
+}
+
+#Single jump
+character_event = {
+	id = RUTH.1003
+	desc = EVTDESC_RUTH_1003
+	picture = GFX_evt_slavic_bonfire
+	border = GFX_event_normal_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		character_event = {
+			id = RUTH.1008
+			days = 10
+		}
+	}
+	
+	option = {
+		trigger = {
+			NOT = {
+				trait = craven
+			}
+		}
+		name = EVTOPTA_RUTH_1003
+		random_list = {
+			80 = { }
+			15 = {
+				add_trait = brave
+				hidden_tooltip = {
+					character_event = {
+						id = 38270
+					}
+				}
+			}
+			4 = {
+				add_trait = wounded
+				hidden_tooltip = {
+					character_event = {
+						id = 38280
+					}
+				}
+			}
+			1 = {
+				death = {
+					death_reason = death_accident
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_RUTH_1003
+		prestige = -50
+		random_list = {
+			60 = { }
+			40 = {
+				add_trait = craven
+				hidden_tooltip = {
+					character_event = {
+						id = 38257
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		trigger = {
+			trait = proud
+		}
+		tooltip_info = proud
+		name = EVTOPTC_RUTH_1003
+		any_courtier = {
+			limit = {
+				is_lowborn = no
+				religion = ROOT
+			}
+			opinion = {
+				modifier = denied_celebrate_together
+				who = ROOT
+				years = 2
+			}
+		}
+	}
+	
+	option = {
+		trigger = {
+			age = 40
+		}
+		name = EVTOPTD_RUTH_1003
+	}
+}
+
+#Couple jump spouse event
+character_event = {
+	id = RUTH.1004
+	desc = EVTDESC_RUTH_1004
+	picture = GFX_evt_slavic_bonfire
+	border = GFX_event_normal_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	option = {
+		trigger = {
+			OR = {
+				ai = no
+				NOT = {
+					age = 40
+				}
+			}
+			NOT = {
+				trait = craven
+			}
+		}
+		name = EVTOPTA_RUTH_1004
+		hidden_tooltip = {
+			spouse = {
+				character_event = {
+					id = RUTH.1005
+					days = 2
+				}
+			}
+		}
+	}
+	
+	option = {
+		trigger = {
+			OR = {
+				ai = no
+				NOT = {
+					age = 40
+				}
+			}
+		}
+		name = EVTOPTB_RUTH_1004
+		random_list = {
+			60 = { }
+			40 = {
+				add_trait = craven
+				hidden_tooltip = {
+					character_event = {
+						id = 38257
+					}
+				}
+			}
+		}
+		hidden_tooltip = {
+			spouse = {
+				character_event = {
+					id = RUTH.1008
+					days = 3
+				}
+			}
+		}
+	}
+	
+	option = {
+		trigger = {
+			age = 40
+		}
+		name = EVTOPTC_RUTH_1004
+		hidden_tooltip = {
+			spouse = {
+				character_event = {
+					id = RUTH.1008
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+#Couple jump char event
+character_event = {
+	id = RUTH.1005
+	desc = EVTDESC_RUTH_1005
+	picture = GFX_evt_slavic_bonfire
+	border = GFX_event_normal_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		character_event = {
+			id = RUTH.1008
+			days = 10
+		}
+	}
+	
+	option = {
+		trigger = {
+			NOT = {
+				trait = craven
+			}
+		}
+		name = EVTOPTA_RUTH_1005
+		random_list = {
+			90 = { }
+			10 = {
+				custom_tooltip = {
+					text = kupala_separated_hands
+					hidden_tooltip = {
+						character_event = {
+							id = RUTH.1006
+							days = 3
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_RUTH_1005
+		prestige = -50
+		random_list = {
+			60 = { }
+			40 = {
+				add_trait = craven
+				hidden_tooltip = {
+					character_event = {
+						id = 38257
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		trigger = {
+			age = 40
+		}
+		name = EVTOPTC_RUTH_1005
+	}
+}
+
+#Couple jump hands separated
+character_event = {
+	id = RUTH.1006
+	desc = EVTDESC_RUTH_1006
+	picture = GFX_evt_slavic_bonfire
+	border = GFX_event_normal_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_RUTH_1006
+		remove_spouse = spouse
+		hidden_tooltip = {
+			spouse = {
+				character_event = {
+					id = RUTH.1007
+				}
+			}
+		}
+		any_vassal = {
+			limit = {
+				is_priest = yes
+				religion = ROOT
+			}
+			opinion = {
+				modifier = followed_gods_will
+				who = ROOT
+				years = 5
+			}
+		}
+		random_list = {
+			70 = {
+				piety = 100
+			}
+			30 = {
+				add_trait = zealous
+				hidden_tooltip = {
+					character_event = {
+						id = 38269
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		trigger = {
+			NOT = {
+				trait = zealous
+			}
+		}
+		name = EVTOPTB_RUTH_1006
+		spouse = {
+			add_lover = ROOT
+		}
+		any_vassal = {
+			limit = {
+				is_priest = yes
+				religion = ROOT
+			}
+			opinion = {
+				modifier = rejected_gods_will
+				who = ROOT
+				years = 5 
+			}
+		}
+		random_list = {
+			70 = {
+				piety = -100
+			}
+			30 = {
+				add_trait = cynical
+				hidden_tooltip = {
+					character_event = {
+						id = 38258
+					}
+				}
+			}
+		}
+	}
+}
+
+#Couple jump hands separated - spouse divorce
+character_event = {
+	id = RUTH.1007
+	desc = EVTDESC_RUTH_1007
+	picture = GFX_evt_slavic_bonfire
+	border = GFX_event_normal_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_RUTH_1007
+	}
+}
+
+#Fern bloom search start
+character_event = {
+	id = RUTH.1008
+	desc = EVTDESC_RUTH_1008
+	picture = GFX_evt_slavic_bonfire
+	border = GFX_event_normal_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	option = {
+		trigger = {
+			OR = {
+				is_married = yes
+				has_lover = yes
+			}
+		}
+		name = EVTOPTA_RUTH_1008
+		hidden_tooltip = {
+			random_list = {
+				40 = { #fail
+					character_event = {
+						id = RUTH.1012
+						days = 10
+					}
+				}
+				20 = { #wolf
+					character_event = {
+						id = RUTH.1011
+						days = 5
+					}
+				}
+				30 = { #lover
+					if = {
+						limit = {
+							is_female = yes
+						}
+						character_event = {
+							id = RUTH.1010
+							days = 5
+						}
+					}
+					if = {
+						limit = {
+							is_female = no
+						}
+						character_event = {
+							id = RUTH.1009
+							days = 5
+						}
+					}
+				}
+				10 = { #success
+					character_event = {
+						id = RUTH.1013
+						days = 5
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		trigger = {
+			is_married = no
+			has_lover = no
+		}
+		name = EVTOPTB_RUTH_1008
+		hidden_tooltip = {
+			random_list = {
+				40 = { #fail
+					character_event = {
+						id = RUTH.1012
+						days = 10
+					}
+				}
+				20 = { #wolf
+					character_event = {
+						id = RUTH.1011
+						days = 5
+					}
+				}
+				30 = { #lover
+					if = {
+						limit = {
+							is_female = yes
+						}
+						character_event = {
+							id = RUTH.1010
+							days = 5
+						}
+					}
+					if = {
+						limit = {
+							is_female = no
+						}
+						character_event = {
+							id = RUTH.1009
+							days = 5
+						}
+					}
+				}
+				10 = { #success
+					character_event = {
+						id = RUTH.1013
+						days = 5
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		trigger = {
+			trait = cynical
+		}
+		tooltip_info = cynical
+		name = EVTOPTC_RUTH_1008
+		piety = -100
+		hidden_tooltip = {
+			character_event = {
+				id = RUTH.1002
+				days = 5
+			}
+		}
+	}
+	
+	option = {
+		trigger = {
+			age = 40
+		}
+		name = EVTOPTD_RUTH_1008
+		hidden_tooltip = {
+			character_event = {
+				id = RUTH.1002
+				days = 5
+			}
+		}
+	}
+}
+
+#Fern search lover event for male
+character_event = {
+	id = RUTH.1009
+	desc = EVTDESC_RUTH_1009
+	picture = GFX_evt_slavic_bonfire
+	border = GFX_event_normal_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	option = {
+		trigger = {
+			NOT = {
+				trait = chaste
+			}
+		}
+		name = EVTOPTA_RUTH_1009
+		random_courtier = {
+			limit = {
+				is_female = yes
+				NOT = {
+					age = 30
+				}
+				NOT = {
+					is_close_relative = ROOT
+				}
+			}
+			add_lover = ROOT
+		}
+		random_list = {
+			80 = { }
+			20 = {
+				add_trait = lustful
+				hidden_tooltip = {
+					character_event = {
+						id = 38272
+					}
+				}
+			}
+		}
+		hidden_tooltip = {
+			character_event = {
+				id = RUTH.1012
+				days = 5
+			}
+		}
+	}
+	
+	option = {
+		trigger = {
+			NOT = {
+				num_of_lovers = 0
+			}
+			NOT = {
+				trait = lustful
+			}
+		}
+		name = EVTOPTB_RUTH_1009
+		hidden_tooltip = {
+			character_event = {
+				id = RUTH.1012
+				days = 5
+			}
+		}
+	}
+	
+	option = {
+		trigger = {
+			trait = proud
+		}
+		tooltip_info = proud
+		name = EVTOPTC_RUTH_1009
+		prestige = 25
+		hidden_tooltip = {
+			character_event = {
+				id = RUTH.1012
+				days = 5
+			}
+		}
+	}
+	
+	option = {
+		trigger = {
+			NOT = {
+				trait = lustful
+			}
+		}
+		name = EVTOPTD_RUTH_1009
+		random_list = {
+			70 = { }
+			30 = {
+				add_trait = chaste
+				hidden_tooltip = {
+					character_event = {
+						id = 38274
+					}
+				}
+			}
+		}
+		hidden_tooltip = {
+			character_event = {
+				id = RUTH.1012
+				days = 5
+			}
+		}
+	}
+}
+
+#Fern search lover event for female
+character_event = {
+	id = RUTH.1010
+	desc = EVTDESC_RUTH_1010
+	picture = GFX_evt_slavic_bonfire
+	border = GFX_event_normal_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	option = {
+		trigger = {
+			NOT = {
+				trait = chaste
+			}
+		}
+		name = EVTOPTA_RUTH_1010
+		random_courtier = {
+			limit = {
+				is_female = no
+				NOT = {
+					age = 40
+				}
+				NOT = {
+					is_close_relative = ROOT
+				}
+			}
+			add_lover = ROOT
+		}
+		random_list = {
+			80 = { }
+			20 = {
+				add_trait = lustful
+				hidden_tooltip = {
+					character_event = {
+						id = 38272
+					}
+				}
+			}
+		}
+		hidden_tooltip = {
+			character_event = {
+				id = RUTH.1012
+				days = 5
+			}
+		}
+	}
+	
+	option = {
+		trigger = {
+			NOT = {
+				num_of_lovers = 0
+			}
+			NOT = {
+				trait = lustful
+			}
+		}
+		name = EVTOPTB_RUTH_1010
+		hidden_tooltip = {
+			character_event = {
+				id = RUTH.1012
+				days = 5
+			}
+		}
+	}
+	
+	option = {
+		trigger = {
+			trait = proud
+		}
+		tooltip_info = proud
+		name = EVTOPTC_RUTH_1010
+		prestige = 25
+		hidden_tooltip = {
+			character_event = {
+				id = RUTH.1012
+				days = 5
+			}
+		}
+	}
+	
+	option = {
+		trigger = {
+			NOT = {
+				trait = lustful
+			}
+		}
+		name = EVTOPTD_RUTH_1010
+		random_list = {
+			70 = { }
+			30 = {
+				add_trait = chaste
+				hidden_tooltip = {
+					character_event = {
+						id = 38274
+					}
+				}
+			}
+		}
+		hidden_tooltip = {
+			character_event = {
+				id = RUTH.1012
+				days = 5
+			}
+		}
+	}
+}
+
+#Fern search wolf event
+character_event = {
+	id = RUTH.1011
+	desc = EVTDESC_RUTH_1011
+	picture = GFX_evt_slavic_bonfire
+	border = GFX_event_normal_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	option = {
+		trigger = {
+			NOT = {
+				trait = craven
+			}
+		}
+		name = EVTOPTA_RUTH_1011
+		prestige = 100
+		add_trait = brave
+		hidden_tooltip = {
+			character_event = {
+				id = 38270
+			}
+		}
+		random_list = {
+			25 = {
+				add_trait = strong
+			}
+			25 = {
+				add_trait = wounded 
+				hidden_tooltip = {
+					character_event = {
+						id = 38280
+					}
+				}
+			}
+			25 = {
+				add_trait = maimed
+				hidden_tooltip = {
+					character_event = {
+						id = 38281
+					}
+				}
+			}
+			25 = {
+				death = {
+					death_reason = death_accident
+				}
+			}
+		}
+		hidden_tooltip = {
+			character_event = {
+				id = RUTH.1012
+				days = 5
+			}
+		}
+	}
+	
+	option = {
+		trigger = {
+			NOT = {
+				trait = brave
+			}
+		}
+		name = EVTOPTB_RUTH_1011
+		prestige = -100
+		add_trait = craven
+		hidden_tooltip = {
+			character_event = {
+				id = 38257
+			}
+		}
+		random_list = {
+			50 = {
+				custom_tooltip = {
+					text = successful_runaway
+				}
+			}
+			20 = {
+				add_trait = wounded 
+				hidden_tooltip = {
+					character_event = {
+						id = 38280
+					}
+				}
+			}
+			20 = {
+				add_trait = maimed
+				hidden_tooltip = {
+					character_event = {
+						id = 38281
+					}
+				}
+			}
+			10 = {
+				death = {
+					death_reason = death_accident
+				}
+			}
+		}
+		hidden_tooltip = {
+			character_event = {
+				id = RUTH.1012
+				days = 5
+			}
+		}
+	}
+	
+	option = {
+		trigger = {
+			OR = {
+				trait = brave
+				trait = strong
+			}
+			NOT = {
+				trait = craven
+			}
+		}
+		name = EVTOPTC_RUTH_1011
+		prestige = 200
+		add_trait = brave
+		hidden_tooltip = {
+			character_event = {
+				id = 38257
+			}
+		}
+		random_list = {
+			55 = {
+				add_trait = strong
+			}
+			20 = {
+				add_trait = wounded 
+				hidden_tooltip = {
+					character_event = {
+						id = 38280
+					}
+				}
+			}
+			15 = {
+				add_trait = maimed
+				hidden_tooltip = {
+					character_event = {
+						id = 38281
+					}
+				}
+			}
+			10 = {
+				death = {
+					death_reason = death_accident
+				}
+			}
+		}
+		hidden_tooltip = {
+			character_event = {
+				id = RUTH.1012
+				days = 5
+			}
+		}
+	}
+}
+
+#Fern search end fail
+character_event = {
+	id = RUTH.1012
+	desc = EVTDESC_RUTH_1012
+	picture = GFX_evt_slavic_bonfire
+	border = GFX_event_normal_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		character_event = {
+			id = RUTH.1002
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_RUTH_1012
+		piety = 10
+	}
+	
+	option = {
+		name = EVTOPTB_RUTH_1012
+		random_list = {
+			80 = { }
+			20 = {
+				add_trait = cynical
+				hidden_tooltip = {
+					character_event = {
+						id = 38258
+					}
+				}
+			}
+		}
+	}
+}
+
+#Fern search found
+character_event = {
+	id = RUTH.1013
+	desc = EVTDESC_RUTH_1013
+	picture = GFX_evt_slavic_bonfire
+	border = GFX_event_normal_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_RUTH_1013
+		prestige = 100
+		piety = 100
+	}
+}
+
+#Fern search end found
+character_event = {
+	id = RUTH.1014
+	desc = EVTDESC_RUTH_1014
+	picture = GFX_evt_slavic_bonfire
+	border = GFX_event_normal_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		character_event = {
+			id = RUTH.1002
+		}
+	}
+	
+	option = {
+		trigger = {
+			is_married = yes
+		}
+		name = EVTOPTA_RUTH_1014
+		spouse = {
+			add_lover = ROOT
+			remove_trait = ugly
+			remove_trait = clubfooted
+			remove_trait = harelip
+			remove_trait = hunchback
+			remove_trait = lisp
+			remove_trait = stutter
+			remove_trait = weak
+		}
+	}
+	
+	option = {
+		trigger = {
+			is_female = no
+		}
+		name = EVTOPTB_RUTH_1014
+		random_courtier = {
+			limit = {
+				is_female = yes
+				NOT = {
+					is_close_relative = ROOT
+				}
+				age = 12
+			}
+			add_lover = ROOT
+			remove_trait = ugly
+			remove_trait = clubfooted
+			remove_trait = harelip
+			remove_trait = hunchback
+			remove_trait = lisp
+			remove_trait = stutter
+			remove_trait = weak
+		}
+	}
+	
+	option = {
+		name = EVTOPTC_RUTH_1014
+		trigger = {
+			is_female = yes
+		}
+		name = EVTOPTB_RUTH_1014
+		random_courtier = {
+			limit = {
+				is_female = no
+				NOT = {
+					is_close_relative = ROOT
+				}
+				age = 16
+			}
+			add_lover = ROOT
+			remove_trait = ugly
+			remove_trait = clubfooted
+			remove_trait = harelip
+			remove_trait = hunchback
+			remove_trait = lisp
+			remove_trait = stutter
+			remove_trait = weak
+		}
+	}
+}

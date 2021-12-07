@@ -1,0 +1,447 @@
+#Ruthenia Mod
+#Ruthenian culture conversion
+#Reserved 1100-1199
+
+namespace = RUTH
+
+#Clear flags
+character_event = {
+	id = RUTH.1100
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		remove_character_modifier = holding_koliada
+		clr_character_flag = do_not_disturb
+		set_character_flag = recent_koliada
+	}
+}
+
+#Koliada start event
+character_event = {
+	id = RUTH.1101
+	desc = EVTDESC_RUTH_1101
+	picture = GFX_evt_slavic_winter_feast
+	border = GFX_event_normal_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_RUTH_1101
+		hidden_tooltip = {
+			character_event = {
+				id = RUTH.1103
+				days = 3
+			}
+		}
+	}
+}
+
+#Koliada end
+character_event = {
+	id = RUTH.1102
+	desc = EVTDESC_RUTH_1102
+	picture = GFX_evt_slavic_winter_feast
+	border = GFX_event_normal_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_RUTH_1102
+		any_dynasty_member = {
+			opinion = {
+				modifier = held_koliada
+				who = ROOT
+				years = 1
+			}
+		}
+		hidden_tooltip = {
+			character_event = {
+				id = RUTH.1100
+			}
+		}
+	}
+}
+
+#Choose a costume
+character_event = {
+	id = RUTH.1103
+	desc = EVTDESC_RUTH_1103
+	picture = GFX_evt_slavic_winter_feast
+	border = GFX_event_normal_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_RUTH_1103
+		wealth = -25
+		prestige = 5
+		piety = 5
+		add_character_modifier = {
+			modifier = koliada_simple_costume
+			duration = 120
+		}
+		hidden_tooltip = {
+			character_event = {
+				id = RUTH.1104
+				days = 10
+			}
+			random_list = {
+				50 = { }
+				25 = {
+					character_event = {
+						id = RUTH.1105
+						days = 5
+					}
+				}
+				25 = {
+					character_event = {
+						id = RUTH.1106
+						days = 5
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		trigger = {
+			trait = zealous
+			NOT = {
+				trait = shy
+			}
+		}
+		tooltip_info = zealous
+		name = EVTOPTB_RUTH_1103
+		wealth = -50
+		piety = 25
+		add_character_modifier = {
+			modifier = koliada_god_costume
+			duration = 120
+		}
+		hidden_tooltip = {
+			character_event = {
+				id = RUTH.1104
+				days = 10
+			}
+			random_list = {
+				50 = { }
+				25 = {
+					character_event = {
+						id = RUTH.1105
+						days = 5
+					}
+				}
+				25 = {
+					character_event = {
+						id = RUTH.1106
+						days = 5
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		trigger = {
+			trait = proud
+			NOT = {
+				trait = shy
+			}
+		}
+		tooltip_info = proud
+		name = EVTOPTC_RUTH_1103
+		wealth = -50
+		prestige = 50
+		add_character_modifier = {
+			modifier = koliada_own_costume
+			duration = 120
+		}
+		hidden_tooltip = {
+			character_event = {
+				id = RUTH.1104
+				days = 10
+			}
+			random_list = {
+				50 = { }
+				25 = {
+					character_event = {
+						id = RUTH.1105
+						days = 5
+					}
+				}
+				25 = {
+					character_event = {
+						id = RUTH.1106
+						days = 5
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		trigger = {
+			trait = shy
+		}
+		tooltip_info = shy
+		name = EVTOPTD_RUTH_1103
+		prestige = -50
+		piety = -50
+	}
+}
+
+#Koliada carols end
+character_event = {
+	id = RUTH.1104
+	desc = EVTDESC_RUTH_1104
+	picture = GFX_evt_slavic_winter_feast
+	border = GFX_event_normal_frame_diplomacy
+	
+	is_triggered_only = yes
+		
+	immediate = {
+		character_event = {
+			id = RUTH.1107
+			days = 5
+		}
+	}
+		
+	option = {
+		name = EVTOPTA_RUTH_1104
+		scaled_wealth = 1.0
+		random_list = {
+			70 = { }
+			30 = {
+				add_trait = just
+				hidden_tooltip = {
+					character_event = {
+						id = 38267
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		trigger = {
+			NOT = {
+				trait = charitable
+			}
+		}
+		name = EVTOPTB_RUTH_1104
+		prestige = -50
+		scaled_wealth = 2
+		random_list = {
+			60 = { }
+			40 = {
+				add_trait = greedy
+				hidden_tooltip = {
+					character_event = {
+						id = 38252
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		trigger = {
+			NOT = {
+				trait = greedy
+			}
+		}
+		name = EVTOPTC_RUTH_1104
+		piety = 50
+		random_list = {
+			60 = { }
+			20 = {
+				add_trait = kind
+				hidden_tooltip = {
+					character_event = {
+						id = 38268
+					}
+				}
+			}
+			20 = {
+				add_trait = charitable
+				hidden_tooltip = {
+					character_event = {
+						id = 38273
+					}
+				}
+			}
+		}
+	}
+}
+
+#Poor house
+character_event = {
+	id = RUTH.1105
+	desc = EVTDESC_RUTH_1105
+	picture = GFX_evt_slavic_winter_feast
+	border = GFX_event_normal_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_RUTH_1105
+		scaled_wealth = -0.5
+		random_list = {
+			80 = {
+				piety = 50
+			}
+			20 = {
+				add_trait = kind
+				hidden_tooltip = {
+					character_event = {
+						id = 38268
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_RUTH_1105
+		piety = -10
+		prestige = 5
+	}
+	
+	option = {
+		trigger = {
+			trait = arbitrary
+		}
+		tooltip_info = arbitrary
+		name = EVTOPTC_RUTH_1105
+		scaled_wealth = 0.5
+		piety = -50
+		random_list = {
+			70 = { }
+			30 = {
+				add_trait = cruel
+				hidden_tooltip = {
+					character_event = {
+						id = 38259
+					}
+				}
+			}
+		}
+	}
+}
+
+#Snowball
+character_event = {
+	id = RUTH.1106
+	desc = EVTDESC_RUTH_1106
+	picture = GFX_evt_slavic_winter_feast
+	border = GFX_event_normal_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	option = {
+		trigger = {
+			NOT = {
+				trait = arbitrary
+			}
+		}
+		name = EVTOPTA_RUTH_1106
+		random_list = {
+			70 = { }
+			15 = {
+				change_martial = 1
+			}
+			15 = {
+				add_trait = gregarious
+				hidden_tooltip = {
+					character_event = {
+						id = 38265
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		trigger = {
+			trait = proud
+		}
+		tooltip_info = proud
+		name = EVTOPTB_RUTH_1106
+		prestige = 25
+		random_list = {
+			80 = { }
+			20 = {
+				add_trait = cruel
+				hidden_tooltip = {
+					character_event = {
+						id = 38259
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		trigger = {
+			trait = arbitrary
+		}
+		tooltip_info = arbitrary
+		name = EVTOPTC_RUTH_1106
+		piety = -25
+		prestige = -25
+		random_realm_character = {
+			limit = {
+				is_female = no
+				NOT = {
+					age = 16
+				}
+				is_landed = no
+			}
+			imprison = ROOT
+		}
+	}
+}
+
+#Feast
+character_event = {
+	id = RUTH.1107
+	desc = EVTDESC_RUTH_1107
+	picture = GFX_evt_slavic_winter_feast
+	border = GFX_event_normal_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		character_event = {
+			id = RUTH.1102
+			days = 10
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_RUTH_1107
+		wealth = -10
+		prestige = 20
+	}
+	
+	option = {
+		trigger = {
+			trait = gluttonous
+		}
+		tooltip_info = gluttonous
+		name = EVTOPTB_RUTH_1107
+		wealth = -20
+		prestige = 40
+	}
+	
+	option = {
+		trigger = {
+			trait = drunkard
+		}
+		tooltip_info = drunkard
+		name = EVTOPTC_RUTH_1107
+		wealth = -20
+		prestige = 40
+	}
+}

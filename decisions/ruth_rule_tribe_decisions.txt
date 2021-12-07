@@ -1,0 +1,271 @@
+decisions = {
+	rule_ulichi = {
+		is_high_prio = yes
+		potential = {
+			culture = ulich
+			is_ruler = yes
+			real_tier = count
+		}
+		allow = {
+			d_ulichi = {
+				has_holder = no
+			}
+			any_realm_province = {
+				culture = ulich
+			}
+			independent = yes
+		}
+		effect = {
+			d_ulichi = {
+				grant_title = ROOT
+			}
+			prestige = 100
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	rule_polianians = {
+		is_high_prio = yes
+		potential = {
+			culture = polianian
+			is_ruler = yes
+			real_tier = count
+		}
+		allow = {
+			d_polianians = {
+				has_holder = no
+			}
+			any_realm_province = {
+				culture = polianian
+			}
+			independent = yes
+		}
+		effect = {
+			d_polianians = {
+				grant_title = ROOT
+			}
+			prestige = 100
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	rule_slovenians = {
+		is_high_prio = yes
+		potential = {
+			culture = slovenian
+			is_ruler = yes
+			real_tier = count
+		}
+		allow = {
+			d_slovenians = {
+				has_holder = no
+			}
+			any_realm_province = {
+				culture = slovenian
+			}
+			independent = yes
+		}
+		effect = {
+			d_slovenians = {
+				grant_title = ROOT
+			}
+			prestige = 100
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	rule_volhyniani = {
+		is_high_prio = yes
+		potential = {
+			culture = volhynian
+			is_ruler = yes
+			real_tier = count
+		}
+		allow = {
+			d_volhyniani = {
+				has_holder = no
+			}
+			any_realm_province = {
+				culture = volhynian
+			}
+			independent = yes
+		}
+		effect = {
+			d_volhyniani = {
+				grant_title = ROOT
+			}
+			prestige = 100
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	rule_kryvians = {
+		is_high_prio = yes
+		potential = {
+			culture = krivich
+			is_ruler = yes
+			real_tier = count
+		}
+		allow = {
+			d_kryvians = {
+				has_holder = no
+			}
+			any_realm_province = {
+				culture = krivich
+			}
+			independent = yes
+		}
+		effect = {
+			d_kryvians = {
+				grant_title = ROOT
+			}
+			prestige = 100
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	rule_severians = {
+		is_high_prio = yes
+		potential = {
+			culture = severian
+			is_ruler = yes
+			real_tier = count
+		}
+		allow = {
+			d_severians = {
+				has_holder = no
+			}
+			independent = yes
+			any_realm_province = {
+				culture = severian
+			}
+		}
+		effect = {
+			d_severians = {
+				grant_title = ROOT
+			}
+			prestige = 100
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	rule_vyatichi = {
+		is_high_prio = yes
+		potential = {
+			culture = vyatich
+			is_ruler = yes
+			real_tier = count
+		}
+		allow = {
+			d_vyatichi = {
+				has_holder = no
+			}
+			independent = yes
+			any_realm_province = {
+				culture = vyatich
+			}
+		}
+		effect = {
+			d_vyatichi = {
+				grant_title = ROOT
+			}
+			prestige = 100
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	rule_dregovichi = {
+		is_high_prio = yes
+		potential = {
+			culture = dregovich
+			is_ruler = yes
+			real_tier = count
+		}
+		allow = {
+			d_dregovichi = {
+				has_holder = no
+			}
+			independent = yes
+			any_realm_province = {
+				culture = dregovich
+			}
+		}
+		effect = {
+			d_dregovichi = {
+				grant_title = ROOT
+			}
+			prestige = 100
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	rule_radimichi = {
+		is_high_prio = yes
+		potential = {
+			culture = radimich
+			is_ruler = yes
+			real_tier = count
+		}
+		allow = {
+			d_radimichi = {
+				has_holder = no
+			}
+			independent = yes
+			any_realm_province = {
+				culture = radimich
+			}
+		}
+		effect = {
+			d_radimichi = {
+				grant_title = ROOT
+			}
+			prestige = 100
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

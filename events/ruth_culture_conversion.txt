@@ -1,0 +1,1001 @@
+#Ruthenia Mod
+#Ruthenian culture conversion
+
+namespace = RUTH
+
+#From Tribal to Ruthenian
+province_event = {
+	id = RUTH.3
+	desc = EVTDESC_RUTH_3
+	picture = GFX_evt_viking_throneroom_oldgods
+	border = GFX_event_normal_frame_diplomacy
+	
+	trigger = {
+		year = 867
+		NOT = {
+			year = 967
+		}
+		culture_group = east_slavic
+		NOT = {
+			OR = {
+				culture = ruthenian
+				culture = ukrainian
+				culture = russian
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 800
+	}
+	
+	#ruler is tribal
+	option = {
+		trigger = {
+			NOT = {
+				owner = {
+					culture = ruthenian
+				}
+			}
+		}
+		name = EVTOPTA_RUTH_3
+		culture = ruthenian
+	}
+	
+	#ruler is ruthenian
+	option = {
+		trigger = {
+			owner = {
+				culture = ruthenian
+			}
+		}
+		name = EVTOPTB_RUTH_3
+		culture = ruthenian
+	}
+}
+
+#From Ruthenian to Ukrainian
+province_event = {
+	id = RUTH.1
+	desc = EVTDESC_RUTH_1
+	picture = GFX_evt_viking_throneroom_oldgods
+	border = GFX_event_normal_frame_diplomacy
+	
+	trigger = {
+		year = 1250
+		NOT = {
+			year = 1400
+		}
+		culture = ruthenian
+		OR = {
+			owner = {
+				top_liege = {
+					culture = ukrainian
+				}
+			}
+			kingdom = {
+				title = k_kiev
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1200
+	}
+	
+	#ruler not ukrainian
+	option = {
+		trigger = {
+			NOT = {
+				owner = {
+					culture = ukrainian
+				}
+			}
+		}
+		name = EVTOPTA_RUTH_1
+		culture = ukrainian
+	}
+	
+	#ruler is ukrainian
+	option = {
+		trigger = {
+			owner = {
+				culture = ukrainian
+			}
+		}
+		name = EVTOPTB_RUTH_1
+		culture = ukrainian
+	}
+}
+
+#From Ruthenian to Russian
+province_event = {
+	id = RUTH.2
+	desc = EVTDESC_RUTH_2
+	picture = GFX_evt_viking_throneroom_oldgods
+	border = GFX_event_normal_frame_diplomacy
+	
+	trigger = {
+		year = 1250
+		NOT = {
+			year = 1400
+		}
+		culture = ruthenian
+		OR = {
+			owner = {
+				top_liege = {
+					culture = russian
+				}
+			}
+			kingdom = {
+				title = k_muscovy
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1200
+	}
+	
+	#ruler not russian
+	option = {
+		trigger = {
+			NOT = {
+				owner = {
+					culture = russian
+				}
+			}
+		}
+		name = EVTOPTA_RUTH_2
+		culture = russian
+	}
+	
+	#ruler is russian
+	option = {
+		trigger = {
+			owner = {
+				culture = russian
+			}
+		}
+		name = EVTOPTB_RUTH_2
+		culture = russian
+	}
+}
+
+#East Slavic Union
+narrative_event = {
+	id = RUTH.4
+	title = EVTNAME_RUTH_4
+	desc = EVTDESC_RUTH_4
+	picture = GFX_evt_viking_throneroom_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	ai = no
+	
+	trigger = {
+		year = 867
+		NOT = {
+			year = 967
+		}
+		culture_group = east_slavic
+		NOT = {
+			OR = {
+				culture = ruthenian
+				culture = ukrainian
+				culture = russian
+			}
+		}
+		NOT = {
+			has_global_flag = east_slavic_conversion_started
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		set_global_flag = east_slavic_conversion_started
+	}
+	
+	option = {
+		name = EVTOPTA_RUTH_4
+	}
+}
+
+#Tribal culture rollback
+narrative_event = {
+	id = RUTH.5
+	title = EVTNAME_RUTH_5
+	desc = EVTDESC_RUTH_5
+	picture = GFX_evt_viking_throneroom_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	trigger = {
+		year = 967
+		OR = {
+			AND = {
+				primary_title = {
+					title = d_ulichi
+				}
+				culture = ulich
+				NOT = {
+					has_global_flag = ulichi_standed
+				}
+			}
+			AND = {
+				primary_title = {
+					title = d_volhynians
+				}
+				culture = volhynian
+				NOT = {
+					has_global_flag = volhynians_standed
+				}
+			}
+			AND = {
+				primary_title = {
+					title = d_polianians
+				}
+				culture = polianian
+				NOT = {
+					has_global_flag = polianians_standed
+				}
+			}
+			AND = {
+				primary_title = {
+					title = d_severians
+				}
+				culture = severian
+				NOT = {
+					has_global_flag = severians_standed
+				}
+			}
+			AND = {
+				primary_title = {
+					title = d_dregovichi
+				}
+				culture = dregovich
+				NOT = {
+					has_global_flag = dregovichi_standed
+				}
+			}
+			AND = {
+				primary_title = {
+					title = d_radimichi
+				}
+				culture = radimich
+				NOT = {
+					has_global_flag = radimichi_standed
+				}
+			}
+			AND = {
+				primary_title = {
+					title = d_vyatichi
+				}
+				culture = vyatich
+				NOT = {
+					has_global_flag = vyatichi_standed
+				}
+			}
+			AND = {
+				primary_title = {
+					title = d_kryvians
+				}
+				culture = krivich
+				NOT = {
+					has_global_flag = kryvians_standed
+				}
+			}
+			AND = {
+				primary_title = {
+					title = d_slovenians
+				}
+				culture = slovenian
+				NOT = {
+					has_global_flag = slovenians_standed
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	immediate = {
+		trigger = {	
+			culture = ulich
+		}
+		set_global_flag = ulichi_standed
+	}
+	
+	immediate = {
+		trigger = {
+			culture = polianian
+		}
+		set_global_flag = polianians_standed
+	}
+	
+	immediate = {
+		trigger = {
+			culture = volhynian
+		}
+		set_global_flag = volhynians_standed
+	}
+	
+	immediate = {
+		trigger = {
+			culture = severian
+		}
+		set_global_flag = severians_standed
+	}
+	
+	immediate = {
+		trigger = {
+			culture = dregovich
+		}
+		set_global_flag = dregovichi_standed
+	}
+	
+	immediate = {
+		trigger = {
+			culture = radimich
+		}
+		set_global_flag = radimichi_standed
+	}
+	
+	immediate = {
+		trigger = {
+			culture = vyatich
+		}
+		set_global_flag = vyatichi_standed
+	}
+	
+	immediate = {
+		trigger = {
+			culture = krivich
+		}
+		set_global_flag = kryvians_standed
+	}
+	
+	immediate = {
+		trigger = {
+			culture = slovenian
+		}
+		set_global_flag = slovenians_standed
+	}
+	
+	option = {
+		name = EVTOPTA_RUTH_5
+		prestige = 100
+		capital_scope = {
+			culture = ROOT
+		}
+	}
+}
+
+#Tribal culture assimilated
+narrative_event = {
+	id = RUTH.6
+	title = EVTNAME_RUTH_6
+	desc = EVTDESC_RUTH_6
+	picture = GFX_evt_viking_throneroom_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	trigger = {
+		year = 967
+		OR = {
+			AND = {
+				primary_title = {
+					title = d_ulichi
+				}
+				NOT = {
+					culture = ulich
+				}
+			}
+			AND = {
+				primary_title = {
+					title = d_volhynians
+				}
+				NOT = {
+					culture = volhynian
+				}
+			}
+			AND = {
+				primary_title = {
+					title = d_polianians
+				}
+				NOT = {
+					culture = polianian
+				}
+			}
+			AND = {
+				primary_title = {
+					title = d_severians
+				}
+				NOT = {
+					culture = severian
+				}
+			}
+			AND = {
+				primary_title = {
+					title = d_dregovichi
+				}
+				NOT = {
+					culture = dregovich
+				}
+			}
+			AND = {
+				primary_title = {
+					title = d_radimichi
+				}
+				NOT = {
+					culture = radimich
+				}
+			}
+			AND = {
+				primary_title = {
+					title = d_vyatichi
+				}
+				NOT = {
+					culture = vyatich
+				}
+			}
+			AND = {
+				primary_title = {
+					title = d_kryvians
+				}
+				NOT = {
+					culture = krivich
+				}
+			}
+			AND = {
+				primary_title = {
+					title = d_slovenians
+				}
+				NOT = {
+					culture = slovenian
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	immediate = {
+		trigger = {	
+			primary_title = {
+				title = d_ulichi
+			}
+		}
+		set_global_flag = ulichi_forgotten
+	}
+	
+	immediate = {
+		trigger = {
+			primary_title = {
+				title = d_polianians
+			}
+		}
+		set_global_flag = polianians_forgotten
+	}
+	
+	immediate = {
+		trigger = {
+			primary_title = {
+				title = d_volhynians
+			}
+		}
+		set_global_flag = volhynians_forgotten
+	}
+	
+	immediate = {
+		trigger = {
+			primary_title = {
+				title = d_severians
+			}
+		}
+		set_global_flag = severians_forgotten
+	}
+	
+	immediate = {
+		trigger = {
+			primary_title = {
+				title = d_dregovichi
+			}
+		}
+		set_global_flag = dregovichi_forgotten
+	}
+	
+	immediate = {
+		trigger = {
+			primary_title = {
+				title = d_radimichi
+			}
+		}
+		set_global_flag = radimichi_forgotten
+	}
+	
+	immediate = {
+		trigger = {
+			primary_title = {
+				title = d_vyatichi
+			}
+		}
+		set_global_flag = vyatichi_forgotten
+	}
+	
+	immediate = {
+		trigger = {
+			primary_title = {
+				title = d_kryvians
+			}
+		}
+		set_global_flag = kryvians_forgotten
+	}
+	
+	immediate = {
+		trigger = {
+			primary_title = {
+				title = d_slovenians
+			}
+		}
+		set_global_flag = slovenians_forgotten
+	}
+	
+	option = {
+		name = EVTOPTA_RUTH_6
+		primary_title = {
+			destroy_landed_title = THIS
+		}
+	}
+}
+
+#Characters from tribal to ruthenian
+narrative_event = {
+	id = RUTH.7
+	title = EVTNAME_RUTH_7
+	desc = EVTDESC_RUTH_7
+	picture = GFX_evt_viking_throneroom_oldgods
+	border = GFX_event_narrative_frame_diplomacy
+	
+	trigger = {
+		OR = {
+			AND = {
+				culture = ulich
+				has_global_flag = ulichi_forgotten
+			}
+			AND = {
+				culture = polianian
+				has_global_flag = polianians_forgotten
+			}
+			AND = {
+				culture = volhynian
+				has_global_flag = volhynians_forgotten
+			}
+			AND = {
+				culture = dregovich
+				has_global_flag = dregovichi_forgotten
+			}
+			AND = {
+				culture = severian
+				has_global_flag = severians_forgotten
+			}
+			AND = {
+				culture = radimich
+				has_global_flag = radimichi_forgotten
+			}
+			AND = {
+				culture = vyatich
+				has_global_flag = vyatichi_forgotten
+			}
+			AND = {
+				culture = krivich
+				has_global_flag = kryvians_forgotten
+			}
+			AND = {
+				culture = slovenian
+				has_global_flag = slovenians_forgotten
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	option = {
+		name = EVTOPTA_RUTH_7
+		culture = ruthenian
+	}
+}
+
+#Provinces from tribal to ruthenian
+province_event = {
+	id = RUTH.8
+	desc = EVTDESC_RUTH_8
+	picture = GFX_evt_viking_throneroom_oldgods
+	border = GFX_event_normal_frame_diplomacy
+	
+	trigger = {
+		OR = {
+			AND = {
+				culture = ulich
+				has_global_flag = ulichi_forgotten
+			}
+			AND = {
+				culture = polianian
+				has_global_flag = polianians_forgotten
+			}
+			AND = {
+				culture = volhynian
+				has_global_flag = volhynians_forgotten
+			}
+			AND = {
+				culture = dregovich
+				has_global_flag = dregovichi_forgotten
+			}
+			AND = {
+				culture = severian
+				has_global_flag = severians_forgotten
+			}
+			AND = {
+				culture = radimich
+				has_global_flag = radimichi_forgotten
+			}
+			AND = {
+				culture = vyatich
+				has_global_flag = vyatichi_forgotten
+			}
+			AND = {
+				culture = krivich
+				has_global_flag = kryvians_forgotten
+			}
+			AND = {
+				culture = slovenian
+				has_global_flag = slovenians_forgotten
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	option = {
+		trigger = {
+			owner = {
+				culture = ruthenian
+			}
+		}
+		name = EVTOPTA_RUTH_8
+		culture = ruthenian
+	}
+	
+	option = {
+		trigger = {
+			NOT = {
+				owner = {
+					culture = ruthenian
+				}
+			}
+		}
+		name = EVTOPTB_RUTH_8
+		culture = ruthenian
+	}
+}
+
+#Tribal culture assimilated without tribe
+province_event = {
+	id = RUTH.9
+	hide_window = yes
+	
+	trigger = {
+		year = 967
+		OR = {
+			AND = {
+				d_dregovichi = {
+					has_holder = no
+				}
+				NOT = {
+					has_global_flag = dregovichi_forgotten
+				}
+				NOT = {
+					has_global_flag = dregovichi_standed
+				}
+			}
+			AND = {
+				d_kryvians = {
+					has_holder = no
+				}
+				NOT = {
+					has_global_flag = kryvians_forgotten
+				}
+				NOT = {
+					has_global_flag = kryvians_standed
+				}
+			}
+			AND = {
+				d_polianians = {
+					has_holder = no
+				}
+				NOT = {
+					has_global_flag = polianians_forgotten
+				}
+				NOT = {
+					has_global_flag = polianians_standed
+				}
+			}
+			AND = {
+				d_radimichi = {
+					has_holder = no
+				}
+				NOT = {
+					has_global_flag = radimichi_forgotten
+				}
+				NOT = {
+					has_global_flag = radimichi_standed
+				}
+			}
+			AND = {
+				d_severians = {
+					has_holder = no
+				}
+				NOT = {
+					has_global_flag = severians_forgotten
+				}
+				NOT = {
+					has_global_flag = severians_standed
+				}
+			}
+			AND = {
+				d_slovenians = {
+					has_holder = no
+				}
+				NOT = {
+					has_global_flag = slovenians_forgotten
+				}
+				NOT = {
+					has_global_flag = slovenians_standed
+				}
+			}
+			AND = {
+				d_ulichi = {
+					has_holder = no
+				}
+				NOT = {
+					has_global_flag = ulichi_forgotten
+				}
+				NOT = {
+					has_global_flag = ulichi_standed
+				}
+			}
+			AND = {
+				d_volhynians = {
+					has_holder = no
+				}
+				NOT = {
+					has_global_flag = volhynians_forgotten
+				}
+				NOT = {
+					has_global_flag = volhynians_standed
+				}
+			}
+			AND = {
+				d_vyatichi = {
+					has_holder = no
+				}
+				NOT = {
+					has_global_flag = vyatichi_forgotten
+				}
+				NOT = {
+					has_global_flag = vyatichi_standed
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	immediate = {
+		trigger = {
+			d_dregovichi = {
+				has_holder = no
+			}
+			NOT = {
+				has_global_flag = dregovichi_forgotten
+			}
+			NOT = {
+				has_global_flag = dregovichi_standed
+			}
+		}
+		set_global_flag = dregovichi_forgotten
+	}
+	
+	immediate = {
+		trigger = {
+			d_kryvians = {
+				has_holder = no
+			}
+			NOT = {
+				has_global_flag = kryvians_forgotten
+			}
+			NOT = {
+				has_global_flag = kryvians_standed
+			}
+		}
+		set_global_flag = kryvians_forgotten
+	}
+	
+	immediate = {
+		trigger = {
+			d_polianians = {
+				has_holder = no
+			}
+			NOT = {
+				has_global_flag = polianians_forgotten
+			}
+			NOT = {
+				has_global_flag = polianians_standed
+			}
+		}
+		set_global_flag = polianians_forgotten
+	}
+	
+	immediate = {
+		trigger = {
+			d_radimichi = {
+				has_holder = no
+			}
+			NOT = {
+				has_global_flag = radimichi_forgotten
+			}
+			NOT = {
+				has_global_flag = radimichi_standed
+			}
+		}
+		set_global_flag = radimichi_forgotten
+	}
+	
+	immediate = {
+		trigger = {
+			d_severians = {
+				has_holder = no
+			}
+			NOT = {
+				has_global_flag = severians_forgotten
+			}
+			NOT = {
+				has_global_flag = severians_standed
+			}
+		}
+		set_global_flag = severians_forgotten
+	}
+	
+	immediate = {
+		trigger = {
+			d_slovenians = {
+				has_holder = no
+			}
+			NOT = {
+				has_global_flag = slovenians_forgotten
+			}
+			NOT = {
+				has_global_flag = slovenians_standed
+			}
+		}
+		set_global_flag = slovenians_forgotten
+	}
+	
+	immediate = {
+		trigger = {
+			d_ulichi = {
+				has_holder = no
+			}
+			NOT = {
+				has_global_flag = ulichi_forgotten
+			}
+			NOT = {
+				has_global_flag = ulichi_standed
+			}
+		}
+		set_global_flag = ulichi_forgotten
+	}
+	
+	immediate = {
+		trigger = {
+			d_volhynians = {
+				has_holder = no
+			}
+			NOT = {
+				has_global_flag = volhynians_forgotten
+			}
+			NOT = {
+				has_global_flag = volhynians_standed
+			}
+		}
+		set_global_flag = volhynians_forgotten
+	}
+	
+	immediate = {
+		trigger = {
+			d_vyatichi = {
+				has_holder = no
+			}
+			NOT = {
+				has_global_flag = vyatichi_forgotten
+			}
+			NOT = {
+				has_global_flag = vyatichi_standed
+			}
+		}
+		set_global_flag = vyatichi_forgotten
+	}
+}
+
+#From Ruthenian to Rusyn
+province_event = {
+	id = RUTH.10
+	desc = EVTDESC_RUTH_10
+	picture = GFX_evt_viking_throneroom_oldgods
+	border = GFX_event_normal_frame_diplomacy
+	
+	trigger = {
+		year = 1250
+		NOT = {
+			year = 1400
+		}
+		culture = ruthenian
+		OR = {
+			owner = {
+				top_liege = {
+					culture = rusyn
+				}
+			}
+			duchy = {
+				title = d_nyitra
+			}
+			duchy = {
+				title = d_ungvar
+			}
+			duchy = {
+				title = d_transylvania
+			}
+			duchy = {
+				title = d_moldau
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1200
+	}
+	
+	#ruler not rusyn
+	option = {
+		trigger = {
+			NOT = {
+				owner = {
+					culture = rusyn
+				}
+			}
+		}
+		name = EVTOPTA_RUTH_10
+		culture = rusyn
+	}
+	
+	#ruler is rusyn
+	option = {
+		trigger = {
+			owner = {
+				culture = rusyn
+			}
+		}
+		name = EVTOPTB_RUTH_10
+		culture = rusyn
+	}
+}

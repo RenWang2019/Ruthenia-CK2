@@ -1,0 +1,661 @@
+#Ruthenia Mod
+
+namespace = RUTH
+
+#Fired from on_five_year_pulse
+#Additional Tribute (vassals)
+character_event = {
+	id = RUTH.100
+	desc = EVTDESC_RUTH_100
+	picture = GFX_evt_council
+	border = GFX_event_normal_frame_diplomacy
+	
+	is_triggered_only = yes
+	only_rulers = yes
+	age = 16
+	capable_only = yes
+	
+	trigger = {
+		is_feudal = yes
+		higher_real_tier_than = BARON
+	}
+	
+	weight_multiplier = {
+		days = 1
+		
+		modifier = {
+			factor = 5
+			trait = greedy
+		}
+		
+		modifier = {
+			factor = 0
+			trait = charitable
+		}
+		
+		modifier = {
+			factor = 0.5
+			trait = just
+		}
+		
+		modifier = {
+			factor = 2
+			trait = arbitrary
+		}
+		
+		modifier = {
+			factor = 0.5
+			trait = shy
+		}
+		
+		modifier = {
+			factor = 0
+			trait = content
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_RUTH_100
+		any_vassal = {
+			opinion = {
+				modifier = additional_tribute
+				who = ROOT
+				years = 10
+			}
+			wealth = -10
+			ROOT = {
+				wealth = 10
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_RUTH_100
+	}
+	
+	option = {
+		trigger = {
+			trait = greedy
+		}
+		tooltip_info = greedy
+		name = EVTOPTC_RUTH_100
+		any_vassal = {
+			opinion = {
+				modifier = additional_tribute
+				who = ROOT
+				years = 20
+			}
+			wealth = -20
+			ROOT = {
+				wealth = 20
+			}
+		}
+	}
+}
+
+#Fired from on_five_year_pulse
+#Additional Tribute (province)
+province_event = {
+	id = RUTH.101
+	desc = EVTDESC_RUTH_101
+	picture = GFX_evt_stone_church
+	border = GFX_event_normal_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		owner = {
+			is_feudal = yes
+			age = 16
+			capable_only = yes
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		
+		modifier = {
+			factor = 5
+			owner = {
+				trait = greedy
+			}
+		}
+		
+		modifier = {
+			factor = 0
+			trait = charitable
+		}
+		
+		modifier = {
+			factor = 0.5
+			owner = {
+				trait = just
+			}
+		}
+		
+		modifier = {
+			factor = 2
+			owner = {
+				trait = arbitrary
+			}
+		}
+		
+		modifier = {
+			factor = 0.5
+			owner = {
+				trait = shy
+			}
+		}
+		
+		modifier = {
+			factor = 0
+			owner = {
+				trait = content
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_RUTH_101
+		wealth = 100
+		add_province_modifier = {
+			name = additional_tribute
+			duration = 730
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_RUTH_101
+	}
+	
+	option = {
+		trigger = {
+			owner = {
+				trait = greedy
+			}
+		}
+		tooltip_info = greedy
+		name = EVTOPTC_RUTH_101
+		wealth = 200
+		add_province_modifier = {
+			name = triple_tribute
+			duration = 730
+		}
+	}
+}
+
+#Fired from on_yearly_pulse
+#Judgement Traditions (character)
+character_event = {
+	id = RUTH.102
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	only_rulers = yes
+	age = 16
+	is_female = no
+	capable_only = yes
+	
+	trigger = {
+		is_feudal = yes
+		higher_real_tier_than = BARON
+		independent = no
+		liege = {
+			NOT = {
+				culture = ROOT
+			}
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		
+		modifier = {
+			factor = 0.5
+			trait = slothful
+		}
+		
+		modifier = {
+			factor = 0.5
+			trait = craven
+		}
+		
+		modifier = {
+			factor = 2
+			trait = ambitious
+		}
+		
+		modifier = {
+			factor = 0.5
+			trait = content
+		}
+		
+		modifier = {
+			factor = 3
+			trait = just
+		}
+		
+		modifier = {
+			factor = 0.75
+			trait = arbitrary
+		}
+		
+		modifier = {
+			factor = 2
+			liege = {
+				trait = slothful
+			}
+		}
+	}
+	
+	immediate = {
+		liege = {
+			character_event = {
+				id = RUTH.103
+			}
+		}
+	}
+}
+
+#Liege receives an event
+character_event = {
+	id = RUTH.103
+	desc = EVTDESC_RUTH_103
+	picture = GFX_evt_throne_room
+	border = GFX_event_normal_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = EVTOPTA_RUTH_103
+		FROM = {
+			opinion = {
+				modifier = allowed_local_justice
+				who = ROOT
+				years = 2
+			}
+		}
+		prestige = -100
+	}
+	
+	option = {
+		name = EVTOPTB_RUTH_103
+		FROM = {
+			opinion = {
+				modifier = denied_local_justice
+				who = ROOT
+				years = 5
+			}
+		}
+		prestige = 25
+	}
+	
+	option = {
+		trigger = {
+			trait = just
+		}
+		tooltip_info = just
+		name = EVTOPTC_RUTH_103
+		prestige = 50
+		random_list = {
+			85 = { }
+			15 = {
+				add_trait = diligent
+				hidden_tooltip = {
+					character_event = {
+						id = 38256 #Notify Diligent
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		trigger = {
+			trait = slothful
+		}
+		tooltip_info = slothful
+		name = EVTOPTD_RUTH_103
+		FROM = {
+			opinion = {
+				modifier = allowed_local_justice
+				who = ROOT
+				years = 5
+			}
+		}
+		prestige = -100
+	}
+}
+
+#Fired by on_yearly_pulse
+#Judgement Traditions (province)
+province_event = {
+	id = RUTH.104
+	desc = EVTDESC_RUTH_104
+	picture = GFX_evt_market
+	border = GFX_event_normal_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		owner = {
+			is_feudal = yes
+			is_adult = yes
+			capable_only = yes
+			NOT = {
+				culture = ROOT
+			}
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		
+		modifier = {
+			factor = 0.75
+			owner = {
+				trait = just
+			}
+		}
+		
+		modifier = {
+			factor = 2
+			owner = {
+				trait = arbitrary
+			}
+		}
+		
+		modifier = {
+			factor = 1.5
+			owner = {
+				trait = slothful
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_RUTH_104
+		owner = {
+			prestige = -50
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_RUTH_104
+		add_province_modifier = {
+			name = conflict_of_laws
+			duration = 365
+		}
+		prestige = 50
+	}
+	
+	option = {
+		trigger = {
+			owner = {
+				trait = just
+			}
+		}
+		tooltip_info = just
+		name = EVTOPTC_RUTH_104
+		owner = {
+			prestige = 50
+		}
+		add_province_modifier = {
+			name = conflict_of_laws_solved
+			duration = 365
+		}
+	}
+	
+	option = {
+		trigger = {
+			owner = {
+				trait = slothful
+			}
+		}
+		tooltip_info = slothful
+		name = EVTOPTD_RUTH_104
+		FROM = {
+			opinion = {
+				modifier = allowed_local_justice
+				who = ROOT
+				years = 5
+			}
+		}
+		prestige = -100
+	}
+}
+
+#Fired by on_five_year_pulse
+#New Idol
+character_event = {
+	id = RUTH.105
+	desc = EVTDESC_RUTH_105
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_normal_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	only_rulers = yes
+	age = 16
+	capable_only = yes
+	
+	trigger = {
+		is_feudal = yes
+		religion_group = pagan_group
+	}
+	
+	weight_multiplier = {
+		days = 1
+		
+		modifier = {
+			factor = 3
+			trait = zealous
+		}
+		
+		modifier = {
+			factor = 0.25
+			trait = cynical
+		}
+		
+		modifier = {
+			factor = 1.5
+			trait = charitable
+		}
+		
+		modifier = {
+			factor = 0.75
+			trait = greedy
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_RUTH_105
+		wealth = -50
+		piety = 100
+		add_character_modifier = {
+			name = raised_an_idol
+			duration = 730
+		}
+	}
+	
+	option = {
+		trigger = {
+			trait = zealous
+		}
+		tooltip_info = zealous
+		name = EVTOPTB_RUTH_105
+		wealth = -200
+		piety = 300
+		add_character_modifier = {
+			name = raised_rich_idol
+			duration = 730
+		}
+		random_list = {
+			70 = { }
+			20 = {
+				add_trait = charitable
+				hidden_tooltip = {
+					character_event = {
+						id = 38273 #Notify Charitable
+					}
+				}
+			}
+			10 = {
+				prestige = 100
+			}
+		}
+	}
+	
+	option = {
+		trigger = {
+			trait = cynical
+		}
+		tooltip_info = cynical
+		name = EVTOPTC_RUTH_105
+		piety = -100
+		add_character_modifier = {
+			name = not_raised_an_idol
+			duration = 730
+		}
+		if = {
+			limit = {
+				NOT = {
+					trait = greedy
+				}
+			}
+			random_list = {
+				95 = { }
+				5 = {
+					add_trait = greedy
+					hidden_tooltip = {
+						character_event = {
+							id = 38252 #Notify Greedy
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		trigger = {
+			trait = greedy
+		}
+		tooltip_info = greedy
+		name = EVTOPTD_RUTH_105
+		wealth = -25
+		piety = 50
+		add_character_modifier = {
+			name = raised_poor_idol
+			duration = 730
+		}
+	}
+}
+
+#Fired from decision
+#Info player about Carpathian Rus
+narrative_event = {
+	id = RUTH.106
+	title = EVTNAME_RUTH_106
+	desc = EVTDESC_RUTH_106
+	picture = GFX_evt_holy_emperor
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	ai = no
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = EVTOPTA_RUTH_106
+	}
+}
+
+#Fired from on_bi_yearly_pulse
+#Comet
+character_event = {
+	id = RUTH.107
+	desc = EVTDESC_RUTH_107
+	picture = GFX_evt_comet
+	border = GFX_event_normal_frame_diplomacy
+	
+	is_triggered_only = yes
+	age = 16
+	capable_only = yes
+	
+	trigger = {
+		religion_group = pagan_group
+		OR = {
+			trait = cynical
+			trait = zealous
+			trait = craven
+			trait = greedy
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		
+		modifier = {
+			factor = 0.25
+			is_ruler = no
+		}
+		
+		modifier = {
+			factor = 0.75
+			is_feudal = no
+		}
+		
+		modifier = {
+			factor = 0.75
+			is_female = yes
+		}
+	}
+	
+	option = {
+		trigger = {
+			trait = zealous
+		}
+		tooltip_info = zealous
+		name = EVTOPTA_RUTH_107
+		piety = 50
+		prestige = -50
+	}
+	
+	option = {
+		trigger = {
+			trait = cynical
+		}
+		tooltip_info = cynical
+		name = EVTOPTB_RUTH_107
+		prestige = 100
+		piety = -50
+	}
+	
+	option = {
+		trigger = {
+			trait = craven
+		}
+		tooltip_info = craven
+		name = EVTOPTC_RUTH_107
+		prestige = -150
+	}
+	
+	option = {
+		trigger = {
+			trait = greedy
+		}
+		tooltip_info = greedy
+		name = EVTOPTD_RUTH_107
+		prestige = -50
+		piety = -50
+		wealth = 50
+	}
+}

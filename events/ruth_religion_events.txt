@@ -1,0 +1,348 @@
+#Ruthenia Mod
+#Ruthenian culture conversion
+
+namespace = RUTH
+
+#Slavic - Choose your God
+character_event = {
+	id = RUTH.200
+	desc = EVTDESC_RUTH_200
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_normal_frame_diplomacy
+	
+	trigger = {
+		has_dlc = "The Old Gods"
+		OR = {
+			religion = slavic_pagan
+			religion = slavic_pagan_reformed
+		}
+		age = 16
+		is_ruler = yes
+		NOT = {
+			has_character_flag = has_main_god
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		set_character_flag = has_main_god
+	}
+	
+	option = {
+		name = EVTOPTA_RUTH_200 #Dazbog
+		add_trait = dazbog_believer
+	}
+	
+	option = {
+		name = EVTOPTB_RUTH_200 #Jarilo
+		add_trait = jarilo_believer
+	}
+	
+	option = {
+		name = EVTOPTC_RUTH_200 #Lada
+		add_trait = lada_believer
+	}
+	
+	option = {
+		name = EVTOPTD_RUTH_200 #Perun
+		add_trait = perun_believer
+	}
+}
+
+#Norse - Choose your God
+character_event = {
+	id = RUTH.201
+	desc = EVTDESC_RUTH_201
+	picture = GFX_evt_runestone_raising_oldgods
+	border = GFX_event_normal_frame_diplomacy
+	
+	trigger = {
+		has_dlc = "The Old Gods"
+		OR = {
+			religion = norse_pagan
+			religion = norse_pagan_reformed
+		}
+		age = 16
+		is_ruler = yes
+		NOT = {
+			has_character_flag = has_main_god
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		set_character_flag = has_main_god
+	}
+	
+	option = {
+		name = EVTOPTA_RUTH_201 #Odin
+		add_trait = odin_believer
+	}
+	
+	option = {
+		name = EVTOPTB_RUTH_201 #Thor
+		add_trait = thor_believer
+	}
+	
+	option = {
+		name = EVTOPTC_RUTH_201 #Freyja
+		add_trait = freyja_believer
+	}
+	
+	option = {
+		name = EVTOPTD_RUTH_201 #Loki
+		add_trait = loki_believer
+	}
+}
+
+###Rus religion reform
+
+#Start event
+character_event = {
+	id = RUTH.205
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				has_dlc = "The Sword of Islam"
+			}
+			narrative_event = {
+				id = RUTH.204 #Shia Islam
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_dlc = "The Sword of Islam"
+				}
+			}
+			narrative_event = {
+				id = RUTH.207 #Catholic
+			}
+		}
+	}
+}
+
+#Shia Islam preacher
+narrative_event = {
+	id = RUTH.204
+	title = EVTNAME_RUTH_204
+	desc = EVTDESC_RUTH_204
+	picture = GFX_evt_imam
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	weight_multiplier = {
+		days = 3
+	}
+	
+	option = {
+		name = EVTOPTA_RUTH_204
+		hidden_tooltip = {
+			narrative_event = {
+				id = RUTH.206 #Sunni Islam
+			}
+		}
+	}
+}
+
+#Sunni Islam preacher
+narrative_event = {
+	id = RUTH.206
+	title = EVTNAME_RUTH_206
+	desc = EVTDESC_RUTH_206
+	picture = GFX_evt_imam
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	weight_multiplier = {
+		days = 3
+	}
+	
+	option = {
+		name = EVTOPTA_RUTH_206
+		hidden_tooltip = {
+			narrative_event = {
+				id = RUTH.207 #Catholic
+			}
+		}
+	}
+}
+
+#Catholic preacher
+narrative_event = {
+	id = RUTH.207
+	title = EVTNAME_RUTH_207
+	desc = EVTDESC_RUTH_207
+	picture = GFX_evt_bishop
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	weight_multiplier = {
+		days = 3
+	}
+	
+	option = {
+		name = EVTOPTA_RUTH_207
+		hidden_tooltip = {
+			narrative_event = {
+				id = RUTH.208 #Catholic
+			}
+		}
+	}
+}
+
+#Orthodox preacher
+narrative_event = {
+	id = RUTH.208
+	title = EVTNAME_RUTH_208
+	desc = EVTDESC_RUTH_208
+	picture = GFX_evt_bishop_byzantine
+	border = GFX_event_narrative_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	weight_multiplier = {
+		days = 3
+	}
+	
+	option = {
+		name = EVTOPTA_RUTH_208
+		hidden_tooltip = {
+			character_event = {
+				id = RUTH.209 #Choose event
+			}
+		}
+	}
+}
+
+#Rus religion reform choose religion
+character_event = {
+	id = RUTH.209
+	desc = EVTDESC_RUTH_209
+	picture = GFX_evt_throne_room
+	border = GFX_event_normal_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	weight_multiplier = {
+		days = 3
+	}
+	
+	option = {
+		name = EVTOPTA_RUTH_209
+		prestige = -300
+		piety = 500
+		religion = catholic
+		add_trait = sympathy_pagans
+		give_nickname = nick_the_great
+		any_courtier = {
+			limit = {
+				religion = ROOT
+				employer = {
+					character = ROOT
+				}
+				is_ruler = no
+				NOT = {
+					trait = zealous
+				}
+			}
+			religion = catholic
+		}
+		capital_scope = {
+			religion = catholic
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_RUTH_209
+		prestige = -300
+		piety = 500
+		religion = orthodox
+		add_trait = sympathy_pagans
+		give_nickname = nick_the_great
+		any_courtier = {
+			limit = {
+				religion = ROOT
+				employer = {
+					character = ROOT
+				}
+				is_ruler = no
+				NOT = {
+					trait = zealous
+				}
+			}
+			religion = orthodox
+		}
+		capital_scope = {
+			religion = orthodox
+		}
+	}
+	
+	option = {
+		trigger = {
+			has_dlc = "The Sword of Islam"
+		}
+		name = EVTOPTC_RUTH_209
+		prestige = -300
+		piety = 500
+		religion = shiite
+		add_trait = sympathy_pagans
+		give_nickname = nick_the_great
+		any_courtier = {
+			limit = {
+				religion = ROOT
+				employer = {
+					character = ROOT
+				}
+				is_ruler = no
+				NOT = {
+					trait = zealous
+				}
+			}
+			religion = shiite
+		}
+		capital_scope = {
+			religion = shiite
+		}
+	}
+	
+	option = {
+		trigger = {
+			has_dlc = "The Sword of Islam"
+		}
+		name = EVTOPTD_RUTH_209
+		prestige = -300
+		piety = 500
+		religion = sunni
+		add_trait = sympathy_pagans
+		give_nickname = nick_the_great
+		any_courtier = {
+			limit = {
+				religion = ROOT
+				employer = {
+					character = ROOT
+				}
+				is_ruler = no
+				NOT = {
+					trait = zealous
+				}
+			}
+			religion = sunni
+		}
+		capital_scope = {
+			religion = sunni
+		}
+	}
+}

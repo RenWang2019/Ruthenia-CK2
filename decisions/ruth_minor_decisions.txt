@@ -1,0 +1,178 @@
+decisions = {
+	hold_kupala = {
+		potential = {
+			is_ruler = yes
+			age = 16
+			prisoner = no
+			only_capable = yes
+			OR = {
+				religion = slavic_pagan
+				religion = slavic_pagan_reformed
+			}
+			NOT = {
+				has_character_flag = do_not_disturb
+			}
+			NOT = {
+				has_character_modifier = holding_kupala
+			}
+			OR = {
+				had_character_flag = {
+					flag = recent_kupala
+					days = 60
+				}
+				NOT = {
+					has_character_flag = recent_kupala
+				}
+			}
+		}
+		allow = {
+			war = no
+			any_demesne_title = {
+				is_occupied = no
+			}
+			month = 5
+			NOT = {
+				month = 7
+			}
+			wealth = 25
+			prisoner = no
+		}
+		effect = {
+			wealth = -25
+			add_character_modifier = {
+				name = holding_kupala
+				duration = -1
+			}
+			set_character_flag = recent_minor_decision
+			set_character_flag = do_not_disturb
+			hidden_tooltip = {
+				character_event = {
+					id = RUTH.1001
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				NOT = {
+					wealth = 200
+				}
+			}
+			
+			modifier = {
+				factor = 0
+				trait = shy
+			}
+			
+			modifier = {
+				factor = 0
+				NOT = {
+					stewardship = 10
+				}
+			}
+			
+			modifier = {
+				factor = 0
+				has_character_flag = recent_minor_decision
+				NOT = {
+					had_character_flag = {
+						flag = recent_minor_decision
+						days = 730
+					}
+				}
+			}
+		}
+	}
+	
+	hold_koliada = {
+		potential = {
+			is_ruler = yes
+			age = 16
+			prisoner = no
+			only_capable = yes
+			OR = {
+				religion = slavic_pagan
+				religion = slavic_pagan_reformed
+			}
+			NOT = {
+				has_character_flag = do_not_disturb
+			}
+			NOT = {
+				has_character_modifier = holding_koliada
+			}
+			OR = {
+				had_character_flag = {
+					flag = recent_koliada
+					days = 60
+				}
+				NOT = {
+					has_character_flag = recent_koliada
+				}
+			}
+		}
+		allow = {
+			war = no
+			any_demesne_title = {
+				is_occupied = no
+			}
+			month = 11
+			wealth = 25
+			prisoner = no
+		}
+		effect = {
+			wealth = -25
+			add_character_modifier = {
+				name = holding_koliada
+				duration = -1
+			}
+			set_character_flag = recent_minor_decision
+			set_character_flag = do_not_disturb
+			hidden_tooltip = {
+				character_event = {
+					id = RUTH.1101
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				NOT = {
+					wealth = 200
+				}
+			}
+			
+			modifier = {
+				factor = 0
+				trait = shy
+			}
+			
+			modifier = {
+				factor = 0
+				NOT = {
+					diplomacy = 10
+				}
+			}
+			
+			modifier = {
+				factor = 0
+				has_character_flag = recent_minor_decision
+				NOT = {
+					had_character_flag = {
+						flag = recent_minor_decision
+						days = 730
+					}
+				}
+			}
+		}
+	}
+}

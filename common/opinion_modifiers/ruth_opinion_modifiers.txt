@@ -1,0 +1,43 @@
+#########################################################################
+# OPINION MODIFIERS
+##########################################################################
+
+# inherit = yes  # Heirs inherit this opinion
+
+# Opinion modifiers can give a reason to do the following actions without penalties
+# prison_reason
+# banish_reason
+# execute_reason
+# revoke_reason
+
+##########################################################################
+# HARD - DO NOT REMOVE OR RENAME ANY OF THESE
+##########################################################################
+
+additional_tribute = {
+	opinion = -20
+}
+
+allowed_local_justice = {
+	opinion = 15
+}
+
+denied_local_justice = {
+	opinion = -15
+}
+
+denied_celebrate_together = {
+	opinion = -20
+}
+
+followed_gods_will = {
+	opinion = 15
+}
+
+rejected_gods_will = {
+	opinion = -15
+}
+
+held_koliada = {
+	opinion = 10
+}

@@ -1,0 +1,109 @@
+##################################################################################################
+# scriptable and usable for event-system below.
+##################################################################################################
+#
+# ICONS:
+#
+# Good 			<=> 		Bad
+#
+#  1 - Martial 				- 19
+#  2 - Learning 			- 20
+#  3 - Diplomacy 			- 21
+#  4 - Stewardship 			- 22
+#  5 - Intrigue 			- 23
+#  6 - Money 				- 24
+#  7 - Prestige 			- 25
+#  8 - Piety 				- 26
+#  9 - Titles 				- 27
+# 10 - Council 				- 28 
+# 11 - Laws 				- 29
+# 12 - Tech 				- 30 
+# 13 - Military 			- 31
+# 14 - Plots 				- 32
+# 15 - Messages 			- 33
+# 16 - Diplomatic actions 	- 34
+# 17 - Church 				- 35
+# 18 - Characters 			- 36
+# 37 - Prison 				- 38
+# 39 - Love 				- 40
+
+#Province
+
+additional_tribute = {
+	local_revolt_risk = 0.1
+	icon = 24
+}
+
+triple_tribute = {
+	local_revolt_risk = 0.2
+	icon = 24
+}
+
+conflict_of_laws = {
+	local_revolt_risk = 0.1
+	icon = 29
+}
+
+conflict_of_laws_solved = {
+	local_revolt_risk = -0.05
+	icon = 11
+}
+
+#Person
+
+raised_an_idol = {
+	general_opinion = 20
+	icon = 17
+}
+
+raised_rich_idol = {
+	general_opinion = 40
+	icon = 17
+}
+
+not_raised_an_idol = {
+	church_opinion = -10
+	icon = 35
+}
+
+raised_poor_idol = {
+	church_opinion = -5
+	icon = 35
+}
+
+#Feasts
+
+held_kupala = {
+	local_revolt_risk = -0.1
+	icon = 18
+}
+
+holding_kupala = {
+	monthly_character_prestige = 0.05
+	icon = 18
+}
+
+holding_koliada = {
+	monthly_character_piety = 0.1
+	icon = 16
+}
+
+koliada_god_costume = {
+	church_opinion = 10
+	icon = 17
+}
+
+koliada_own_costume = {
+	castle_opinion = 10
+	icon = 7
+}
+
+koliada_simple_costume = {
+	general_opinion = 5
+	icon = 18
+}
+
+koliada_no_costume = {
+	general_opinion = -10
+	icon = 36
+}
