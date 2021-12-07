@@ -1,0 +1,44 @@
+6833 = {
+	name="Sviatopolk"
+	religion="slavic_pagan"
+	culture="slovenian"
+	trait = content
+	dynasty=1029136
+	father=160062
+	834.1.1={
+		birth=yes
+	}
+	890.1.1={
+		death=yes
+	}
+}
+
+6832 = {
+	name="Radoslav"
+	religion="slavic_pagan"
+	culture="slovenian"
+	trait = content
+	dynasty=1029136
+	father=160062
+	836.1.1={
+		birth=yes
+	}
+	888.1.1={
+		death=yes
+	}
+}
+
+6831 = {
+	name="Svetozar"
+	religion="slavic_pagan"
+	culture="slovenian"
+	trait = content
+	dynasty=1029136
+	father=160058
+	834.1.1={
+		birth=yes
+	}
+	887.1.1={
+		death=yes
+	}
+}

@@ -1,0 +1,235 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+ruthenian;Ruthenian;;;;;;;;;;;;;x
+ukrainian;Ukrainian;;;;;;;;;;;;;x
+ulich;Ulich;;;;;;;;;;;;;x
+polianian;Polianian;;;;;;;;;;;;;x
+dregovich;Dregovich;;;;;;;;;;;;;x
+severian;Severian;;;;;;;;;;;;;x
+radimich;Radimich;;;;;;;;;;;;;x
+krivich;Krivich;;;;;;;;;;;;;x
+vyatich;Vyatich;;;;;;;;;;;;;x
+slovenian;Ilmen Slav;;;;;;;;;;;;;x
+volhynian;Volhynian;;;;;;;;;;;;;x
+rusyn;Rusyn;;;;;;;;;;;;;x
+#Rulers
+#ruthenian
+emperor_ruthenian;Velikiy Knyaz;;;;;;;;;;;;;x
+emperor_female_ruthenian;Velika Kniagina;;;;;;;;;;;;;x
+king_ruthenian;Grand Prince;;;;;;;;;;;;;x
+king_female_ruthenian;Grand Princess;;;;;;;;;;;;;x
+duke_ruthenian;Prince;;;;;;;;;;;;;x
+duke_female_ruthenian;Princess;;;;;;;;;;;;;x
+count_ruthenian;Autonomous Prince;;;;;;;;;;;;;x
+count_female_ruthenian;Autonomous Princess;;;;;;;;;;;;;x
+baron_ruthenian;Boyar;;;;;;;;;;;;;x
+baron_female_ruthenian;Boyarina;;;;;;;;;;;;;x
+#ukrainian
+emperor_ukrainian;Velikiy Knyaz;;;;;;;;;;;;;x
+emperor_female_ukrainian;Velika Kniagina;;;;;;;;;;;;;x
+king_ukrainian;Grand Prince;;;;;;;;;;;;;x
+king_female_ukrainian;Grand Princess;;;;;;;;;;;;;x
+duke_ukrainian;Prince;;;;;;;;;;;;;x
+duke_female_ukrainian;Princess;;;;;;;;;;;;;x
+count_ukrainian;Autonomous Prince;;;;;;;;;;;;;x
+count_female_ukrainian;Autonomous Princess;;;;;;;;;;;;;x
+baron_ukrainian;Boyar;;;;;;;;;;;;;x
+baron_female_ukrainian;Boyarina;;;;;;;;;;;;;x
+#russian
+king_russian;Velikiy Knyaz;;;;;;;;;;;;;x
+king_female_russian;Velikaya Kniagina;;;;;;;;;;;;;x
+duke_russian;Knyaz;;;;;;;;;;;;;x
+duke_female_russian;Kniagina;;;;;;;;;;;;;x
+count_russian;Graf;;;;;;;;;;;;;x
+count_female_russian;Grafinya;;;;;;;;;;;;;x
+baron_russian;Boyar;;;;;;;;;;;;;x
+baron_female_russian;Boyarina;;;;;;;;;;;;;x
+#rusyn
+emperor_rusyn;Velikiy Knyaz;;;;;;;;;;;;;x
+emperor_female_rusyn;Velika Kniagina;;;;;;;;;;;;;x
+king_rusyn;Grand Prince;;;;;;;;;;;;;x
+king_female_rusyn;Grand Princess;;;;;;;;;;;;;x
+duke_rusyn;Prince;;;;;;;;;;;;;x
+duke_female_rusyn;Princess;;;;;;;;;;;;;x
+count_rusyn;Autonomous Prince;;;;;;;;;;;;;x
+count_female_rusyn;Autonomous Princess;;;;;;;;;;;;;x
+baron_rusyn;Boyar;;;;;;;;;;;;;x
+baron_female_rusyn;Boyarina;;;;;;;;;;;;;x
+#ulich
+emperor_ulich;Grand Prince;;;;;;;;;;;;;x
+emperor_female_ulich;Grand Princess;;;;;;;;;;;;;x
+king_ulich;Prince;;;;;;;;;;;;;x
+king_female_ulich;Princess;;;;;;;;;;;;;x
+duke_ulich;High Chief;;;;;;;;;;;;;x
+duke_female_ulich;High Chieftess;;;;;;;;;;;;;x
+count_ulich;Chief;;;;;;;;;;;;;x
+count_female_ulich;Chieftess;;;;;;;;;;;;;x
+baron_ulich;Boyar;;;;;;;;;;;;;x
+baron_female_ulich;Boyarina;;;;;;;;;;;;;x
+#volhynian
+emperor_volhynian;Grand Prince;;;;;;;;;;;;;x
+emperor_female_volhynian;Grand Princess;;;;;;;;;;;;;x
+king_volhynian;Prince;;;;;;;;;;;;;x
+king_female_volhynian;Princess;;;;;;;;;;;;;x
+duke_volhynian;High Chief;;;;;;;;;;;;;x
+duke_female_volhynian;High Chieftess;;;;;;;;;;;;;x
+count_volhynian;Chief;;;;;;;;;;;;;x
+count_female_volhynian;Chieftess;;;;;;;;;;;;;x
+baron_volhynian;Boyar;;;;;;;;;;;;;x
+baron_female_volhynian;Boyarina;;;;;;;;;;;;;x
+#polianian
+emperor_polianian;Grand Prince;;;;;;;;;;;;;x
+emperor_female_polianian;Grand Princess;;;;;;;;;;;;;x
+king_polianian;Prince;;;;;;;;;;;;;x
+king_female_polianian;Princess;;;;;;;;;;;;;x
+duke_polianian;High Chief;;;;;;;;;;;;;x
+duke_female_polianian;High Chieftess;;;;;;;;;;;;;x
+count_polianian;Chief;;;;;;;;;;;;;x
+count_female_polianian;Chieftess;;;;;;;;;;;;;x
+baron_polianian;Boyar;;;;;;;;;;;;;x
+baron_female_polianian;Boyarina;;;;;;;;;;;;;x
+#dregovich
+emperor_dregovich;Grand Prince;;;;;;;;;;;;;x
+emperor_female_dregovich;Grand Princess;;;;;;;;;;;;;x
+king_dregovich;Prince;;;;;;;;;;;;;x
+king_female_dregovich;Princess;;;;;;;;;;;;;x
+duke_dregovich;High Chief;;;;;;;;;;;;;x
+duke_female_dregovich;High Chieftess;;;;;;;;;;;;;x
+count_dregovich;Chief;;;;;;;;;;;;;x
+count_female_dregovich;Chieftess;;;;;;;;;;;;;x
+baron_dregovich;Boyar;;;;;;;;;;;;;x
+baron_female_dregovich;Boyarina;;;;;;;;;;;;;x
+#severian
+emperor_severian;Grand Prince;;;;;;;;;;;;;x
+emperor_female_severian;Grand Princess;;;;;;;;;;;;;x
+king_severian;Prince;;;;;;;;;;;;;x
+king_female_severian;Princess;;;;;;;;;;;;;x
+duke_severian;High Chief;;;;;;;;;;;;;x
+duke_female_severian;High Chieftess;;;;;;;;;;;;;x
+count_severian;Chief;;;;;;;;;;;;;x
+count_female_severian;Chieftess;;;;;;;;;;;;;x
+baron_severian;Boyar;;;;;;;;;;;;;x
+baron_female_severian;Boyarina;;;;;;;;;;;;;x
+#radimich
+emperor_radimich;Grand Prince;;;;;;;;;;;;;x
+emperor_female_radimich;Grand Princess;;;;;;;;;;;;;x
+king_radimich;Prince;;;;;;;;;;;;;x
+king_female_radimich;Princess;;;;;;;;;;;;;x
+duke_radimich;High Chief;;;;;;;;;;;;;x
+duke_female_radimich;High Chieftess;;;;;;;;;;;;;x
+count_radimich;Chief;;;;;;;;;;;;;x
+count_female_radimich;Chieftess;;;;;;;;;;;;;x
+baron_radimich;Boyar;;;;;;;;;;;;;x
+baron_female_radimich;Boyarina;;;;;;;;;;;;;x
+#vyatich
+emperor_vyatich;Grand Prince;;;;;;;;;;;;;x
+emperor_female_vyatich;Grand Princess;;;;;;;;;;;;;x
+king_vyatich;Prince;;;;;;;;;;;;;x
+king_female_vyatich;Princess;;;;;;;;;;;;;x
+duke_vyatich;High Chief;;;;;;;;;;;;;x
+duke_female_vyatich;High Chieftess;;;;;;;;;;;;;x
+count_vyatich;Chief;;;;;;;;;;;;;x
+count_female_vyatich;Chieftess;;;;;;;;;;;;;x
+baron_vyatich;Boyar;;;;;;;;;;;;;x
+baron_female_vyatich;Boyarina;;;;;;;;;;;;;x
+#slovenian
+emperor_slovenian;Grand Prince;;;;;;;;;;;;;x
+emperor_female_slovenian;Grand Princess;;;;;;;;;;;;;x
+king_slovenian;Prince;;;;;;;;;;;;;x
+king_female_slovenian;Princess;;;;;;;;;;;;;x
+duke_slovenian;High Chief;;;;;;;;;;;;;x
+duke_female_slovenian;High Chieftess;;;;;;;;;;;;;x
+count_slovenian;Chief;;;;;;;;;;;;;x
+count_female_slovenian;Chieftess;;;;;;;;;;;;;x
+baron_slovenian;Boyar;;;;;;;;;;;;;x
+baron_female_slovenian;Boyarina;;;;;;;;;;;;;x
+#kryvych
+emperor_krivich;Grand Prince;;;;;;;;;;;;;x
+emperor_female_krivich;Grand Princess;;;;;;;;;;;;;x
+king_krivich;Prince;;;;;;;;;;;;;x
+king_female_krivich;Princess;;;;;;;;;;;;;x
+duke_krivich;High Chief;;;;;;;;;;;;;x
+duke_female_krivich;High Chieftess;;;;;;;;;;;;;x
+count_krivich;Chief;;;;;;;;;;;;;x
+count_female_krivich;Chieftess;;;;;;;;;;;;;x
+baron_krivich;Boyar;;;;;;;;;;;;;x
+baron_female_krivich;Boyarina;;;;;;;;;;;;;x
+#Titles
+#ruthenian
+barony_of_ruthenian;Boyardom of;;;;;;;;;;;;;x
+county_of_ruthenian;Autonomous Principality of;;;;;;;;;;;;;x
+duchy_of_ruthenian;Principality of;;;;;;;;;;;;;x
+kingdom_of_ruthenian;Grand Principality of;;;;;;;;;;;;;x
+empire_of_ruthenian;Grand Principality of ;;;;;;;;;;;;;x
+#ukrainian
+barony_of_ukrainian;Boyardom of;;;;;;;;;;;;;x
+county_of_ukrainian;Autonomous Principality of;;;;;;;;;;;;;x
+duchy_of_ukrainian;Principality of;;;;;;;;;;;;;x
+kingdom_of_ukrainian;Grand Principality of;;;;;;;;;;;;;x
+empire_of_ukrainian;Grand Principality of;;;;;;;;;;;;;x
+#russian
+barony_of_russian;Boyardom of;;;;;;;;;;;;;x
+county_of_russian;Autonomous Principality of;;;;;;;;;;;;;x
+duchy_of_russian;Principality of;;;;;;;;;;;;;x
+kingdom_of_russian;Grand Principality of;;;;;;;;;;;;;x
+empire_of_russian;Tsardom of;;;;;;;;;;;;;x
+#rusyn
+barony_of_rusyn;Boyardom of;;;;;;;;;;;;;x
+county_of_rusyn;Autonomous Principality of;;;;;;;;;;;;;x
+duchy_of_rusyn;Principality of;;;;;;;;;;;;;x
+kingdom_of_rusyn;Grand Principality of;;;;;;;;;;;;;x
+empire_of_rusyn;Grand Principality of;;;;;;;;;;;;;x
+#ulich
+barony_of_ulich;Boyardom of;;;;;;;;;;;;;x
+county_of_ulich;Chiefdom of;;;;;;;;;;;;;x
+duchy_of_ulich;High Chiefdom of;;;;;;;;;;;;;x
+kingdom_of_ulich;Principality of;;;;;;;;;;;;;x
+empire_of_ulich;Grand Principality of;;;;;;;;;;;;;x
+#volhynian
+barony_of_volhynian;Boyardom of;;;;;;;;;;;;;x
+county_of_volhynian;Chiefdom of;;;;;;;;;;;;;x
+duchy_of_volhynian;High Chiefdom of;;;;;;;;;;;;;x
+kingdom_of_volhynian;Principality of;;;;;;;;;;;;;x
+empire_of_volhynian;Grand Principality of;;;;;;;;;;;;;x
+#polianian
+barony_of_polianian;Boyardom of;;;;;;;;;;;;;x
+county_of_polianian;Chiefdom of;;;;;;;;;;;;;x
+duchy_of_polianian;High Chiefdom of;;;;;;;;;;;;;x
+kingdom_of_polianian;Principality of;;;;;;;;;;;;;x
+empire_of_polianian;Grand Principality of;;;;;;;;;;;;;x
+#dregovich
+barony_of_dregovich;Boyardom of;;;;;;;;;;;;;x
+county_of_dregovich;Chiefdom of;;;;;;;;;;;;;x
+duchy_of_dregovich;High Chiefdom of;;;;;;;;;;;;;x
+kingdom_of_dregovich;Principality of;;;;;;;;;;;;;x
+empire_of_dregovich;Grand Principality of;;;;;;;;;;;;;x
+#severian
+barony_of_severian;Boyardom of;;;;;;;;;;;;;x
+county_of_severian;Chiefdom of;;;;;;;;;;;;;x
+duchy_of_severian;High Chiefdom of;;;;;;;;;;;;;x
+kingdom_of_severian;Principality of;;;;;;;;;;;;;x
+empire_of_severian;Grand Principality of;;;;;;;;;;;;;x
+#radimich
+barony_of_radimich;Boyardom of;;;;;;;;;;;;;x
+county_of_radimich;Chiefdom of;;;;;;;;;;;;;x
+duchy_of_radimich;High Chiefdom of;;;;;;;;;;;;;x
+kingdom_of_radimich;Principality of;;;;;;;;;;;;;x
+empire_of_radimich;Grand Principality of;;;;;;;;;;;;;x
+#vyatich
+barony_of_vyatich;Boyardom of;;;;;;;;;;;;;x
+county_of_vyatich;Chiefdom of;;;;;;;;;;;;;x
+duchy_of_vyatich;High Chiefdom of;;;;;;;;;;;;;x
+kingdom_of_vyatich;Principality of;;;;;;;;;;;;;x
+empire_of_vyatich;Grand Principality of;;;;;;;;;;;;;x
+#slovenian
+barony_of_slovenian;Boyardom of;;;;;;;;;;;;;x
+county_of_slovenian;Chiefdom of;;;;;;;;;;;;;x
+duchy_of_slovenian;High Chiefdom of;;;;;;;;;;;;;x
+kingdom_of_slovenian;Principality of;;;;;;;;;;;;;x
+empire_of_slovenian;Grand Principality of;;;;;;;;;;;;;x
+#krivich
+barony_of_krivich;Boyardom of;;;;;;;;;;;;;x
+county_of_krivich;Chiefdom of;;;;;;;;;;;;;x
+duchy_of_krivich;High Chiefdom of;;;;;;;;;;;;;x
+kingdom_of_krivich;Principality of;;;;;;;;;;;;;x
+empire_of_krivich;Grand Principality of;;;;;;;;;;;;;x
+#;;;;;;;;;;;;;x

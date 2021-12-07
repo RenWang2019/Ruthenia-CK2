@@ -1,0 +1,42 @@
+82271 = {
+	name="Ctibor"
+	dynasty=9125
+	father=82266
+	religion="slavic_pagan"
+	culture="volhynian"
+	850.1.1={
+		birth="850.1.1"
+	}
+	928.1.1={
+		death="928.1.1"
+	}
+}
+
+82269 = {
+	name="Bronislav"
+	dynasty=9125
+	father=82266
+	religion="slavic_pagan"
+	culture="volhynian"
+	848.1.1={
+		birth="848.1.1"
+	}
+	929.1.1={
+		death="929.1.1"
+	}
+}
+
+82266 = {
+	name="Boryslav"
+	dynasty=9125
+	father=82258
+	religion="slavic_pagan"
+	culture="volhynian"
+	trait="bastard"
+	824.1.1={
+		birth="824.1.1"
+	}
+	900.1.1={
+		death="900.1.1"
+	}
+}

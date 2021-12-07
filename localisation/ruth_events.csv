@@ -1,0 +1,217 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTDESC_RUTH_1;The people of [Root.GetName] have developed their language and customs to a point where they may now be considered part of a distinct branch of Ruthenian culture. They have begun to refer to themselves as Ukrainian.;;;;;;;;;;;;;x
+EVTOPTA_RUTH_1;What will they think of next, I wonder.;;;;;;;;;;;;;x
+EVTOPTB_RUTH_1;Welcome into the fold, my Ukrainian brothers and sisters.;;;;;;;;;;;;;x
+#
+EVTDESC_RUTH_2;The people of [Root.GetName] have developed their language and customs to a point where they may now be considered part of a distinct branch of Ruthenian culture. They have begun to refer to themselves as Russian.;;;;;;;;;;;;;;x
+EVTOPTA_RUTH_2;What will they think of next, I wonder.;;;;;;;;;;;;;x
+EVTOPTB_RUTH_2;Welcome into the fold, my Russian brothers and sisters.;;;;;;;;;;;;;x
+#
+EVTDESC_RUTH_3;The people of [Root.GetName] came to the point where they cannot longer consider themselves as a part of the tribe. Now they are Ruthenians.;;;;;;;;;;;;;x
+EVTOPTA_RUTH_3;What will they think of next, I wonder.;;;;;;;;;;;;;x
+EVTOPTB_RUTH_3;Welcome into the fold, my Ruthenian brothers and sisters.;;;;;;;;;;;;;x
+#
+EVTNAME_RUTH_4;Hard times have come!;;;;;;;;;;;;;x
+EVTDESC_RUTH_4;Our traditions are fading, foreign preachers speak of this new 'Christ God'.\nSee for yourself my chief, tribes are falling apart, honoured ways of living, our very traditions are being forsaken!\nTo the west the mighty Christ worshiping kingdoms seek to bring ruin to our lands and horrors to our people!To the east savage hordes of riders who worship sky god seek to enslave us! And to the north our oldest foes, the varangians who raid and plunder at our expense... but perhaps they can be persuaded to plunder the hated Christ-worshipers instead?\nIf we are to survive these dark times my chief, we must stand as one people, you must bring us together as one heart, one soul! Only then we can stand the test of time and pave our own way through history on our terms.\nMay the Gods protect us!;;;;;;;;;;;;;x
+EVTOPTA_RUTH_4;We will fight with honour.;;;;;;;;;;;;;x
+#
+EVTNAME_RUTH_5;The Tribe Will Stand!;;;;;;;;;;;;;x
+EVTDESC_RUTH_5;Despite all problems we stand the test of time.\nOur brethren have developed our own language and customs to a point where we may no longer be considered one of primitive tribes.\nWe proved to ourselves and the whole world that we are the mighty nation.;;;;;;;;;;;;;x
+EVTOPTA_RUTH_5;Let us see what future holds to our tribe.;;;;;;;;;;;;;x
+#
+EVTNAME_RUTH_6;The Tribe Forgotten!;;;;;;;;;;;;;x
+EVTDESC_RUTH_6;Our tribe failed the test of time.\nOur brethren united with neighboring east slavs and became a one big family. From now on we are the part of something bigger then just a tribe.\nWe are Ruthenians.;;;;;;;;;;;;;x
+EVTOPTA_RUTH_6;It is time to move on and build a civilized slavic nation.;;;;;;;;;;;;;x
+#
+EVTNAME_RUTH_7;The Tribe Forgotten!;;;;;;;;;;;;;x
+EVTDESC_RUTH_7;Our tribe failed the test of time.\nOur brethren united with neighboring east slavs and became a one big family. From now on we are the part of something bigger then just a tribe.\nWe are Ruthenians.;;;;;;;;;;;;;x
+EVTOPTA_RUTH_7;It is time to move on and build a civilized slavic nation.;;;;;;;;;;;;;x
+#
+EVTDESC_RUTH_8;The people of [Root.GetName] came to the point where they cannot longer consider themselves as a part of the tribe. Now they are Ruthenians.;;;;;;;;;;;;;x
+EVTOPTA_RUTH_8;Welcome into the fold, my Ruthenian brothers and sisters.;;;;;;;;;;;;;x
+EVTOPTB_RUTH_8;What will they think of next, I wonder.;;;;;;;;;;;;;x
+#
+EVTDESC_RUTH_100;My advisors told me that the lords have lot of money and can handle an additional tribute. Should I demand it or not?;;;;;;;;;;;;;x
+EVTOPTA_RUTH_100;Of course I do!;;;;;;;;;;;;;x
+EVTOPTB_RUTH_100;There is no need in unrest.;;;;;;;;;;;;;x
+EVTOPTC_RUTH_100;Maybe they can handle even triple tribute...;;;;;;;;;;;;;x
+#
+EVTDESC_RUTH_101;My advisors told me that people of [Root.GetName] had a good harvest this year and can handle an additional tribute. Should I demand it or not?;;;;;;;;;;;;;x
+EVTOPTA_RUTH_101;Of course I do!;;;;;;;;;;;;;x
+EVTOPTB_RUTH_101;There is no need in unrest.;;;;;;;;;;;;;x
+EVTOPTC_RUTH_101;Maybe then can handle even triple tribute...;;;;;;;;;;;;;x
+#
+EVTDESC_RUTH_103;One of my vassals wants to judge a man with traditional laws of his culture. In my culture there is different punishment for such crime. Should I let it or not?;;;;;;;;;;;;;x
+EVTOPTA_RUTH_103;Let the vassal to use his judgement.;;;;;;;;;;;;;x
+EVTOPTB_RUTH_103;In my land only my laws can be used!;;;;;;;;;;;;;x
+EVTOPTC_RUTH_103;This cause needs a unique decision...;;;;;;;;;;;;;x
+EVTOPTD_RUTH_103;I don't care which law will be used just leave me alone!;;;;;;;;;;;;;x
+#
+EVTDESC_RUTH_104;People of [Root.GetName] caught a robber and want to deal with him by their cultural laws. In my culture there is different punishment for robbery. Should I stop them?;;;;;;;;;;;;;x
+EVTOPTA_RUTH_104;Let the crowd decides.;;;;;;;;;;;;;x
+EVTOPTB_RUTH_104;In my land only my laws can be used!;;;;;;;;;;;;;x
+EVTOPTC_RUTH_104;This cause needs a unique decision...;;;;;;;;;;;;;x
+EVTOPTD_RUTH_104;I don't care which law will be used just leave me alone!;;;;;;;;;;;;;x
+#
+EVTDESC_RUTH_105;My seer suggested to make an idol to praise the gods...;;;;;;;;;;;;;x
+EVTOPTA_RUTH_105;Sure, let the gods be good to us.;;;;;;;;;;;;;x
+EVTOPTB_RUTH_105;In the name of gods we'll make the perfect one!;;;;;;;;;;;;;x
+EVTOPTC_RUTH_105;An idol? Nah! I can happily live without it.;;;;;;;;;;;;;x
+EVTOPTD_RUTH_105;There is no need to make it valuable...;;;;;;;;;;;;;x
+#
+EVTDESC_RUTH_10;The people of [Root.GetName] have developed their language and customs to a point where they may now be considered part of a distinct branch of Ruthenian culture. They have begun to refer to themselves as Rusyn.;;;;;;;;;;;;;x
+EVTOPTA_RUTH_10;What will they think of next, I wonder.;;;;;;;;;;;;;x
+EVTOPTB_RUTH_10;Welcome into the fold, my Rusyn brothers and sisters.;;;;;;;;;;;;;x
+#
+EVTNAME_RUTH_106;Carpathian Rus;;;;;;;;;;;;;x
+EVTDESC_RUTH_106;Finally after many years under foreign rulers our people got their own promised land. The Rusyns rose up against foreigners tyranny and fought back the invaders from this hills. From now on your dinasty will rule over Rusyns of all lands. We will claim our birthright on all the mountains and one day Carpathians will belong to the rightful kingdom of Carpathian Rus.;;;;;;;;;;;;;x
+EVTOPTA_RUTH_106;Long live the Carpathians!;;;;;;;;;;;;;x
+#
+EVTDESC_RUTH_107;This night everyone can see comet in the sky...;;;;;;;;;;;;;x
+EVTOPTA_RUTH_107;It's an Omen!;;;;;;;;;;;;;x
+EVTOPTB_RUTH_107;I don't scare of Gods' Wrath!;;;;;;;;;;;;;x
+EVTOPTC_RUTH_107;WE ARE DOOMED!;;;;;;;;;;;;;x
+EVTOPTD_RUTH_107;This amulets will protect you.;;;;;;;;;;;;;x
+#
+EVTDESC_RUTH_200;You are old enough to choose your Patron God.;;;;;;;;;;;;;x
+EVTOPTA_RUTH_200;Dazbog;;;;;;;;;;;;;x
+EVTOPTB_RUTH_200;Jarilo;;;;;;;;;;;;;x
+EVTOPTC_RUTH_200;Lada;;;;;;;;;;;;;x
+EVTOPTD_RUTH_200;Perun;;;;;;;;;;;;;x
+#
+EVTDESC_RUTH_201;You are old enough to choose your Patron God.;;;;;;;;;;;;;x
+EVTOPTA_RUTH_201;Odin;;;;;;;;;;;;;x
+EVTOPTB_RUTH_201;Thor;;;;;;;;;;;;;x
+EVTOPTC_RUTH_201;Freyja;;;;;;;;;;;;;x
+EVTOPTD_RUTH_201;Loki;;;;;;;;;;;;;x
+#
+EVTDESC_RUTH_202;You are old enough to choose your Patron God.;;;;;;;;;;;;;x
+EVTOPTA_RUTH_202;Ukko;;;;;;;;;;;;;x
+EVTOPTB_RUTH_202;Akka;;;;;;;;;;;;;x
+EVTOPTD_RUTH_202;Nnyrikki;;;;;;;;;;;;;x
+EVTOPTC_RUTH_202;Sappo Ilmarinen;;;;;;;;;;;;;x
+#
+EVTDESC_RUTH_203;You are old enough to choose your Patron God.;;;;;;;;;;;;;x
+EVTOPTA_RUTH_203;Dietas;;;;;;;;;;;;;x
+EVTOPTB_RUTH_203;Perkunas;;;;;;;;;;;;;x
+EVTOPTD_RUTH_203;Laima;;;;;;;;;;;;;x
+EVTOPTC_RUTH_203;Zemyna;;;;;;;;;;;;;x
+#
+EVTNAME_RUTH_204;Shia Islam;;;;;;;;;;;;;x
+EVTDESC_RUTH_204;The preacher from far West has arrived and said:\n'Great Lord of Slavic people! The rumors about your glory comes to the farthest corners of the world. So as a word that you are seeking for the true God to belief instead of your pathetic deities. So here my word as there is no God but Allah and Muhammad - His prophet!'\nAfter this words preacher was talking about all aspects of Shia Islam while you listened to him carefully.;;;;;;;;;;;;;x
+EVTOPTA_RUTH_204;Ahl al-Bayt;;;;;;;;;;;;;x
+#
+EVTNAME_RUTH_206;Sunni Islam;;;;;;;;;;;;;x
+EVTDESC_RUTH_206;The preacher from far East has arrived and said:\n'Great Lord of Slavic people! Among my people there is a legend about mighty khagans of West and now I'm speaking with one. The great caliph has been told that you are seeking for the true God to belief instead of old myths. So here my word as there is no God but Allah and Muhammad - His prophet!'\nAfter this words preacher was talking about all aspects of Sunni Islam while you listened to him carefully.;;;;;;;;;;;;;x
+EVTOPTA_RUTH_206;There is no God but Allah and Muhammad - His prophet...;;;;;;;;;;;;;x
+#
+EVTNAME_RUTH_207;Catholic Church;;;;;;;;;;;;;x
+EVTDESC_RUTH_207;The preacher from Rome has arrived to your court:\n'Great Lord of Slavic people! I had a long journey to your distant land to spread the Word among your people. The Pope got a word that you are ready pray for your pagan deeds and kneel before Lord. For this I serve as the one who speaks with the God!'\nAnd so he began spreading the word of Christian God in my hall and many stories of old times and times of Christ were spoken...;;;;;;;;;;;;;x
+EVTOPTA_RUTH_207;Deus iustus est!;;;;;;;;;;;;;x
+#
+EVTNAME_RUTH_208;Orthodox Church;;;;;;;;;;;;;x
+EVTDESC_RUTH_208;The preacher from Tsargorod has arrived to your court:\n'Great Lord of Slavic people and the emperor's closest friend! It is honor for me to be here. As soon as the word were spoken that you decided to pray for your sins and kneel before Lord my heart became full of love. The love that Lord gives to all of us. So let me tell you about his miracles!'\nAnd so the word of loving God who forgives your sins if you will ask for it spread. ;;;;;;;;;;;;;x
+EVTOPTA_RUTH_208;And forgive us our trespasses as we forgive our debtors...;;;;;;;;;;;;;x
+#
+EVTDESC_RUTH_209;Now I know about all of this 'One Gods' and need to decide which one is true...;;;;;;;;;;;;;x
+EVTOPTA_RUTH_209;Christi Dei mei!;;;;;;;;;;;;;x
+EVTOPTB_RUTH_209;And forgive me my trespasses...;;;;;;;;;;;;;x
+EVTOPTC_RUTH_209;Ahl al-Bayt.;;;;;;;;;;;;;x
+EVTOPTD_RUTH_209;There is no God but Allah and Muhammad - His prophet!;;;;;;;;;;;;;x
+#
+EVTDESC_RUTH_1001;The Night to selebrate Kupala feast has come.;;;;;;;;;;;;;x
+EVTOPTA_RUTH_1001;Let the fun to run this place!;;;;;;;;;;;;;x
+#
+EVTDESC_RUTH_1002;With sunrise Kupala Night is ending.;;;;;;;;;;;;;x
+EVTOPTA_RUTH_1002;Celebration of youth never ends.;;;;;;;;;;;;;x
+#
+EVTDESC_RUTH_1003;On this night all young people jump over the flames of bonfires in a ritual test of bravery and faith. Will you join your people?;;;;;;;;;;;;;x
+EVTOPTA_RUTH_1003;Of course I will!;;;;;;;;;;;;;x
+EVTOPTB_RUTH_1003;It is to dangerous.;;;;;;;;;;;;;
+EVTOPTC_RUTH_1003;Lord will not spend time with commoners!;;;;;;;;;;;;;
+EVTOPTD_RUTH_1003;I'm too old for this.;;;;;;;;;;;;;x
+#
+EVTDESC_RUTH_1004;On the Kupala Night all young people jump over the flames of bonfires in a ritual test of bravery and faith. Should I ask my spouse to jump together?;;;;;;;;;;;;;x
+EVTOPTA_RUTH_1004;Let us join, my dear!;;;;;;;;;;;;;x
+EVTOPTB_RUTH_1004;Not this time...;;;;;;;;;;;;;x
+EVTOPTC_RUTH_1004;I'm too old for this.;;;;;;;;;;;;;x
+#
+EVTDESC_RUTH_1005;On this night all young people jump over the flames of bonfires in a ritual test of bravery and faith. Your spouse asking you to join and test your marriage.;;;;;;;;;;;;;x
+EVTOPTA_RUTH_1005;As you wish, my love.;;;;;;;;;;;;;x
+EVTOPTB_RUTH_1005;Not this time.;;;;;;;;;;;;;x
+EVTOPTC_RUTH_1005;I'm too old for this.;;;;;;;;;;;;;x
+#
+EVTDESC_RUTH_1006;While jumping your hands have been separated. This is very bad sign since it says you're not mentioned to be together.;;;;;;;;;;;;;x
+EVTOPTA_RUTH_1006;If Gods wants to divide us than who am I to disagree?;;;;;;;;;;;;;x
+EVTOPTB_RUTH_1006;Some stupid belief will not separate us!;;;;;;;;;;;;;x
+#
+EVTDESC_RUTH_1007;While jumping your hands have been separated. This is very bad sign since it says you're not mentioned to be together. My spouse decided to follow the will of Gods.;;;;;;;;;;;;;x
+EVTOPTA_RUTH_1007;As The Gods wish...;;;;;;;;;;;;;x
+#
+EVTDESC_RUTH_1008;There is an ancient belief that the eve of Kupala is the only time of the year when ferns bloom. Prosperity, luck, discernment and power would befall on whoever finds a fern flower. Many young men and women would roam through the forests. Will you join them?;;;;;;;;;;;;;x
+EVTOPTA_RUTH_1008;I will find fern flower for my beloved!;;;;;;;;;;;;;x
+EVTOPTB_RUTH_1008;I will find fern flower and my true love!;;;;;;;;;;;;;x
+EVTOPTC_RUTH_1008;The fern flower is the lie so why would I search it?;;;;;;;;;;;;;x
+EVTOPTD_RUTH_1008;I'm too old for this.;;;;;;;;;;;;;x
+#
+EVTDESC_RUTH_1009;Wandering the forest in search of fern flower you found instead a beautiful young woman who sit near the lake. Strange feeling appears inside of you while looking at her...;;;;;;;;;;;;;x
+EVTOPTA_RUTH_1009;Approach young lady...;;;;;;;;;;;;;x
+EVTOPTB_RUTH_1009;I am faithful to my beloved.;;;;;;;;;;;;;x
+EVTOPTC_RUTH_1009;She's not worth the lord like me.;;;;;;;;;;;;;x
+EVTOPTD_RUTH_1009;I must control my desires!;;;;;;;;;;;;;x
+#
+EVTDESC_RUTH_1010;Wandering the forest in search of fern flower you sat down at the lake to take a rest. The peaceful silence was broken by a young man who's approaching you. Looking at him makes you feel something strange inside...;;;;;;;;;;;;;x
+EVTOPTA_RUTH_1010;Spend the rest of night with him.;;;;;;;;;;;;;x
+EVTOPTB_RUTH_1010;I am faithful to my beloved.;;;;;;;;;;;;;x
+EVTOPTC_RUTH_1010;He's not worth someone like me.;;;;;;;;;;;;;x
+EVTOPTD_RUTH_1010;True lady need to control her desires!;;;;;;;;;;;;;x
+#
+EVTDESC_RUTH_1011;In search of fern flower at some point the understanding that you are lost comes. After hours in the deep dark of the wood you hear a howl and every second it comes closer. In a moment wolf comes out of darkness and running to you.;;;;;;;;;;;;;x
+EVTOPTA_RUTH_1011;Come closer!;;;;;;;;;;;;;x
+EVTOPTB_RUTH_1011;I'd better run!;;;;;;;;;;;;;x
+EVTOPTC_RUTH_1011;I will kill you with bare hands!;;;;;;;;;;;;;x
+#
+EVTDESC_RUTH_1012;You spent all night in search of fern flower and ended up with nothing but fatigue.;;;;;;;;;;;;;x
+EVTOPTA_RUTH_1012;I guess this is not the right night.;;;;;;;;;;;;;x
+EVTOPTB_RUTH_1012;Maybe there is no fern flower at all...;;;;;;;;;;;;;x
+#
+EVTDESC_RUTH_1013;After spending all night in search of mythical flower you see something bright under the tree. There is no doubt - you have found the fern flower!;;;;;;;;;;;;;x
+EVTOPTA_RUTH_1013;Qui quaerit, reperit!;;;;;;;;;;;;;x
+#
+EVTDESC_RUTH_1014;According to legend two souls will be bound by love if the fern flower will be shared between them...;;;;;;;;;;;;;x
+EVTOPTA_RUTH_1014;It is for you, my dear...;;;;;;;;;;;;;x
+EVTOPTB_RUTH_1014;This flower is for the most beautiful one.;;;;;;;;;;;;;x
+EVTOPTC_RUTH_1014;This flower is for the most handsome one.;;;;;;;;;;;;;x
+#
+EVTDESC_RUTH_1101;Veles known to regularly send spirits of the dead into the living world as his heralds. Festivals in his honour held  in Winter, when time is  coming to the very end of world order, chaos growing stronger, the borders between worlds of living and dead are fading, and ancestral spirits would return amongst the living.;;;;;;;;;;;;;x
+EVTOPTA_RUTH_1101;The celebration of Velja noc starts right now!;;;;;;;;;;;;;x
+#
+EVTDESC_RUTH_1102;With the last of your guests on a way back home the celebration of Velja noc and Koliada ends.;;;;;;;;;;;;;x
+EVTOPTA_RUTH_1102;It was good to see all of them...;;;;;;;;;;;;;x
+#
+EVTDESC_RUTH_1103;The celebration of Velja noc starts with the ritual of Koliada. People are gathering into groups, changing their outfit for something special and walking from house to house singing the feast songs, so called carols.;;;;;;;;;;;;;x
+EVTOPTA_RUTH_1103;I will wear simple outfit...;;;;;;;;;;;;;x
+EVTOPTB_RUTH_1103;I will be look like one of gods...;;;;;;;;;;;;;x
+EVTOPTC_RUTH_1103;I will wear my best outfit to represent myself...;;;;;;;;;;;;;x
+EVTOPTD_RUTH_1103;I will not go...;;;;;;;;;;;;;x
+#
+EVTDESC_RUTH_1104;At the end of the night group divides all what they've been given today. Since you are a big lord it is for you to decide what to do with all of this money...;;;;;;;;;;;;;x
+EVTOPTA_RUTH_1104;The same piece for everyone.;;;;;;;;;;;;;x
+EVTOPTB_RUTH_1104;I will take all of money.;;;;;;;;;;;;;x
+EVTOPTC_RUTH_1104;Give it all for charity.;;;;;;;;;;;;;x
+#
+EVTDESC_RUTH_1105;Door opens and very old man stands in front of you. There is no debt he has nothing to offer you for the carol.;;;;;;;;;;;;;x
+EVTOPTA_RUTH_1105;It is a celebration for everyone. Here, take this coin old man!;;;;;;;;;;;;;x
+EVTOPTB_RUTH_1105;Let us hope his neighbours more generous...;;;;;;;;;;;;;x
+EVTOPTC_RUTH_1105;If you don't have money that obviously we will take something costly in exchange!;;;;;;;;;;;;;x
+#
+EVTDESC_RUTH_1106;While playing with snowballs one of kinds missed the target and accidentally shot you when you less expected. You fell face down into the snow. When you got up everyone laughed on you.;;;;;;;;;;;;;x
+EVTOPTA_RUTH_1106;Nice shot kid! But what will you say about this one!;;;;;;;;;;;;;x
+EVTOPTB_RUTH_1106;Punish this stupid kid!;;;;;;;;;;;;;x
+EVTOPTC_RUTH_1106;You think this is funny? I'll see how you will smile in a jail!;;;;;;;;;;;;;x
+#
+EVTDESC_RUTH_1107;At the end of celebration it is time to gather your family together and spend Velja noc together...;;;;;;;;;;;;;x
+EVTOPTA_RUTH_1107;I'm exited to see all of you again!;;;;;;;;;;;;;x
+EVTOPTB_RUTH_1107;The feast? I like the feasts!;;;;;;;;;;;;;x
+EVTOPTC_RUTH_1107;Uncork the best wines!;;;;;;;;;;;;;x
+#;;;;;;;;;;;;;x

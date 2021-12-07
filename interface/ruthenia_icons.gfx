@@ -1,0 +1,101 @@
+spriteTypes = {
+	
+#Decisions
+	spriteType = {
+		name = "GFX_hold_kupala"
+		texturefile = "gfx\\interface\\decision_icon_hold_kupala.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_create_carpathian_rus"
+		texturefile = "gfx\\interface\\decision_icon_create_carpathian_rus.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_hold_koliada"
+		texturefile = "gfx\\interface\\decision_icon_hold_koliada.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_reform_rus_religion"
+		texturefile = "gfx\\interface\\decision_icon_reform_rus_religion.dds"
+	}
+	
+#Convert to ...
+	spriteType = {
+		name = "GFX_convert_to_russian"
+		texturefile = "gfx\\interface\\decision_icon_convert_to_russian.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_convert_to_ukrainian"
+		texturefile = "gfx\\interface\\decision_icon_convert_to_ukrainian.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_convert_to_ruthenian"
+		texturefile = "gfx\\interface\\decision_icon_convert_to_ruthenian.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_convert_to_rusyn"
+		texturefile = "gfx\\interface\\decision_icon_convert_to_rusyn.dds"
+	}
+	
+#Rule the Tribe...
+	spriteType = {
+		name = "GFX_rule_ulichi"
+		texturefile = "gfx\\interface\\decision_icon_rule_ulichi.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_rule_slovenians"
+		texturefile = "gfx\\interface\\decision_icon_rule_slovenians.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_rule_polianians"
+		texturefile = "gfx\\interface\\decision_icon_rule_polianians.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_rule_volhyniani"
+		texturefile = "gfx\\interface\\decision_icon_rule_volhyniani.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_rule_kryvians"
+		texturefile = "gfx\\interface\\decision_icon_rule_kryvians.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_rule_severians"
+		texturefile = "gfx\\interface\\decision_icon_rule_severians.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_rule_vyatichi"
+		texturefile = "gfx\\interface\\decision_icon_rule_vyatichi.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_rule_dregovichi"
+		texturefile = "gfx\\interface\\decision_icon_rule_dregovichi.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_rule_radimichi"
+		texturefile = "gfx\\interface\\decision_icon_rule_radimichi.dds"
+	}
+	
+#Events
+	spriteType = {
+		name = "GFX_evt_slavic_bonfire"
+		texturefile = "gfx\\event_pictures\\slavic_bonfire.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_evt_slavic_winter_feast"
+		texturefile = "gfx\\event_pictures\\slavic_winter_feast.dds"
+	}
+}

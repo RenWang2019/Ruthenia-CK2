@@ -1,0 +1,134 @@
+spriteTypes = {
+#Slavic dieties
+	spriteType = {
+		name = "GFX_trait_dazbog_believer"
+		texturefile = "gfx/traits/slavic_believer.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_jarilo_believer"
+		texturefile = "gfx/traits/slavic_believer.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_lada_believer"
+		texturefile = "gfx/traits/slavic_believer.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_perun_believer"
+		texturefile = "gfx/traits/slavic_believer.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	
+#Norse dieties
+	spriteType = {
+		name = "GFX_trait_odin_believer"
+		texturefile = "gfx/traits/norse_believer.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_thor_believer"
+		texturefile = "gfx/traits/norse_believer.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_freyja_believer"
+		texturefile = "gfx/traits/norse_believer.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_loki_believer"
+		texturefile = "gfx/traits/norse_believer.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	
+#Suomenusko dieties
+	spriteType = {
+		name = "GFX_trait_ukko_believer"
+		texturefile = "gfx/traits/siberian_believer.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_akka_believer"
+		texturefile = "gfx/traits/siberian_believer.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_nyyrikki_believer"
+		texturefile = "gfx/traits/siberian_believer.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_ilmarinen_believer"
+		texturefile = "gfx/traits/siberian_believer.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+}
+
+#Romuva dieties
+	spriteType = {
+		name = "GFX_trait_dietas_believer"
+		texturefile = "gfx/traits/baltic_believer.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_perkunas_believer"
+		texturefile = "gfx/traits/baltic_believer.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_laima_believer"
+		texturefile = "gfx/traits/baltic_believer.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_zemyna_believer"
+		texturefile = "gfx/traits/baltic_believer.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+}

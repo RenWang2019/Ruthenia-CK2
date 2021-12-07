@@ -1,0 +1,57 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+#Modifiers
+additional_tribute;Additional Tribute;;;;;;;;;;;;;x
+triple_tribute;Triple Tribute;;;;;;;;;;;;;x
+allowed_local_justice;Allowed Local Justice;;;;;;;;;;;;;x
+denied_local_justice;Denied Local Justice;;;;;;;;;;;;;x
+conflict_of_laws;Conflict of Laws;;;;;;;;;;;;;x
+conflict_of_laws_solved;Public Trial;;;;;;;;;;;;;x
+raised_an_idol;Raised an Idol;;;;;;;;;;;;;x
+raised_rich_idol;Raised Rich Idol;;;;;;;;;;;;;x
+not_raised_an_idol;Not Raised an Idol;;;;;;;;;;;;;x
+raised_poor_idol;Raised Poor Idol;;;;;;;;;;;;;x
+held_kupala;Held Kupala Night;;;;;;;;;;;;;x
+holding_kupala;Holding Kupala Night;;;;;;;;;;;;;x
+denied_celebrate_together;Denied to celebrate together;;;;;;;;;;;;;x
+followed_gods_will;Followed The Will of Gods;;;;;;;;;;;;;x
+rejected_gods_will;Rejected The WIll of Gods;;;;;;;;;;;;;x
+holding_koliada;Holding Koliada;;;;;;;;;;;;;x
+koliada_god_costume;Outfit in the name of Diety;;;;;;;;;;;;;x
+koliada_own_costume;Outfit in my own name;;;;;;;;;;;;;x
+koliada_simple_costume;Simple outfit;;;;;;;;;;;;;x
+koliada_no_costume;Denied to participate in Koliada;;;;;;;;;;;;;x
+held_koliada;Held Koliada;;;;;;;;;;;;;x
+#Traits
+dazbog_believer;Prefers Dazbog;;;;;;;;;;;;;x
+dazbog_believer_desc;This character thinks Dazbog is the greatest slavic god.;;;;;;;;;;;;;x
+jarilo_believer;Prefers Jarilo;;;;;;;;;;;;;x
+jarilo_believer_desc;This character thinks Jarilo is the greatest slavic god.;;;;;;;;;;;;;x
+lada_believer;Prefers Lada;;;;;;;;;;;;;x
+lada_believer_desc;This character thinks Lada is the greatest slavic goddess.;;;;;;;;;;;;;x
+perun_believer;Prefers Perun;;;;;;;;;;;;;x
+perun_believer_desc;This character thinks Perun is the greatest slavic god.;;;;;;;;;;;;;x
+odin_believer;Prefers Odin;;;;;;;;;;;;;x
+odin_believer_desc;This character thinks Odin is the greatest norse god.;;;;;;;;;;;;;x
+thor_believer;Prefers Thor;;;;;;;;;;;;;x
+thor_believer_desc;This character thinks Thor is the greatest norse god.;;;;;;;;;;;;;x
+freyja_believer;Prefers Freyja;;;;;;;;;;;;;x
+freyja_believer_desc;This character thinks Freyja is the greatest norse god.;;;;;;;;;;;;;x
+loki_believer;Prefers Loki;;;;;;;;;;;;;x
+loki_believer_desc;This character thinks Loki is the greatest norse god.;;;;;;;;;;;;;x
+ukko_believer;Prefers Ukko;;;;;;;;;;;;;x
+ukko_believer_desc;This character thinks Ukko is the greatest suomenusko god.;;;;;;;;;;;;;x
+akka_believer;Prefers Akka;;;;;;;;;;;;;x
+akka_believer_desc;This character thinks Akka is the greatest suomenusko god.;;;;;;;;;;;;;x
+nyyrikki_believer;Prefers Nyyrikki;;;;;;;;;;;;;x
+nyyrikki_believer_desc;This character thinks Nyyrikki is the greatest suomenusko god.;;;;;;;;;;;;;x
+ilmarinen_believer;Prefers Sappo Ilmarinen;;;;;;;;;;;;;x
+ilmarinen_believer_desc;This character thinks Sappo Ilmarinen is the greatest suomenusko god.;;;;;;;;;;;;;x
+dietas_believer;Prefers Dietas;;;;;;;;;;;;;x
+dietas_believer_desc;This character thinks Dietas is the greatest romuva god.;;;;;;;;;;;;;x
+perkunas_believer;Prefers Perkunas;;;;;;;;;;;;;x
+perkunas_believer_desc;This character thinks Perkunas is the greatest romuva god.;;;;;;;;;;;;;x
+laima_believer;Prefers Laima;;;;;;;;;;;;;x
+laima_believer_desc;This character thinks Laima is the greatest romuva god.;;;;;;;;;;;;;x
+zemyna_believer;Prefers Zemyna;;;;;;;;;;;;;x
+zemyna_believer_desc;This character thinks Zemyna is the greatest romuva god.;;;;;;;;;;;;;x
+#;;;;;;;;;;;;;x
